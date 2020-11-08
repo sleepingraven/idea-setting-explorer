@@ -53,8 +53,15 @@ IntelliJ IDEA for versions after 2020.2
 
 ## Installation
 
-- Install the latest version on the **Plugin** page in **IDEA**.
-- Download from [Plugin homepage][plugin-homepage] and install it from disk.
+- Using IDE built-in plugin system:
+  
+  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for `Idea Setting Explorer`</kbd> >
+  <kbd>Install Plugin</kbd>
+  
+- Manually:
+
+  Download the [latest release](https://github.com/%REPOSITORY%/releases/latest) and install it manually using
+  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 ## Usage
 
