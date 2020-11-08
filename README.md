@@ -1,4 +1,3 @@
-# IntelliJ Platform Plugin Template
 
 <div style="text-align: center;">
     <a href=[plugin-homepage]>
@@ -19,7 +18,6 @@
 -->
 [![GitHub](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
 
-- [IntelliJ Platform Plugin Template](#intellij-platform-plugin-template)
   - [Introduction](#introduction)
   - [Overview](#overview)
   - [Compatibility](#compatibility)
