@@ -57,10 +57,10 @@ IntelliJ IDEA for versions after 2020.2
 ## Installation
 
 - Using IDE built-in plugin system:
-  
+
   <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for `Idea Setting Explorer`</kbd> >
   <kbd>Install Plugin</kbd>
-  
+
 - Manually:
 
   Download the [latest release](https://github.com/%REPOSITORY%/releases/latest) and install it manually using
@@ -117,7 +117,7 @@ Matched characters of configurations will have a highlighted appearance.
   - Documentations added
   - README written
   - CHANGELOG written
-  
+
 Refer to [Change Log][gh:change-log] page for complete update log.
 
 ## Support
