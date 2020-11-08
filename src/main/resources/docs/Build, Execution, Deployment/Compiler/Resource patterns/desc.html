@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>In this field, specify the regular expression that describes the files that should be recognized as resources and,
+	consequently, copied to the output directory. Use semicolons <code>;</code> to separate individual patterns.</q></p>
+<p><q>Wildcards and negations are welcome. The following symbols are accepted:</q></p>
+<ul>
+	<li><code>*</code> represents an unlimited number of any symbols, possibly none.</li>
+	<li><code>?</code> represents exactly one symbol.</li>
+	<li><code>.</code> represents a delimiter.</li>
+	<li><code>!</code> negates the entire mask it is applied to. Consequently, any file with the name and extension that
+		do not match the pattern will be recognized as a resource file.
+	</li>
+	<li><code>/</code> represents a path separator.</li>
+	<li><code>/**/</code> denotes any number of directories.</li>
+	<li><code>&lt;dir&gt;:&lt;pattern&gt;</code> denotes any directory located under the source root &lt;dir&gt;; &lt;pattern&gt;
+		is any pattern that meets the above-mentioned requirements.
+	</li>
+</ul>
+<p><q>The examples below illustrate the use of wildcards in the resource patterns:</q></p>
+<ul>
+	<li><code>*.xml</code> - any XML file.</li>
+	<li><code>!*.xml</code> - any file whose extension is not <span class='filepath'>.xml</span>.</li>
+	<li><code>z*.properties;z*.gif;z*.png;z*.jpeg;z*.xml</code> - any <span class='filepath'>.properties</span>, <span
+			class='filepath'>.gif</span>, <span class='filepath'>.png</span>, <span class='filepath'>.jpeg</span>, or
+		<span class='filepath'>.xml</span> file with the name beginning with <span class='filepath'>z</span>.
+	</li>
+	<li><code>MyResources:*</code> - all files and folders within the directory <code>MyResources</code>.</li>
+</ul>
+<p><q>(If you want to skip compilation of certain Groovy files in the modules with the Groovy support, include them in
+	the list of the resource patterns.)</q></p>
+
+</body>
+</html>

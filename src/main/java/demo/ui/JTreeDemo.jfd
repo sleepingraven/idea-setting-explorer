@@ -1,0 +1,58 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.7" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0:1.0"
+			"$rowSpecs": "0:1.0"
+			"$hGap": 5
+			"$vGap": 5
+			"$alignLeft": true
+			"$alignTop": true
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane"
+				add( new FormComponent( "javax.swing.JTree" ) {
+					name: "tree"
+					"model": new javax.swing.tree.DefaultTreeModel( new javax.swing.tree.DefaultMutableTreeNode {
+						userObject: "(root)"
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "1"
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "2"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "3"
+							} )
+						} )
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "4"
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "5"
+							} )
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "6"
+							} )
+						} )
+						add( new javax.swing.tree.DefaultMutableTreeNode {
+							userObject: "7"
+							add( new javax.swing.tree.DefaultMutableTreeNode {
+								userObject: "8"
+								add( new javax.swing.tree.DefaultMutableTreeNode {
+									userObject: "9"
+								} )
+							} )
+						} )
+					} )
+					"rootVisible": false
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 850, 525 )
+		} )
+	}
+}
+

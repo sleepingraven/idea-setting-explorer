@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Select this option to store the generated <span class='filepath'>.iml</span> and library files in the <span
+		class='filepath'>.idea</span> directory instead of <span class='filepath'>idea.system.path</span>.</q></p>
+<p><q>It might be helpful in the following cases:</q></p>
+<ul>
+	<li>sharing the IDE-specific module settings via VCS since the <span class='filepath'>.idea</span> directory stores
+		<a href='https://www.jetbrains.com/help/idea/configure-project-settings.html'>project-level settings</a>. You
+		can also opt for the <a href='https://github.com/JetBrains/gradle-idea-ext-plugin'>gradle-idea-ext</a> plugin
+		that helps you describe the <a
+				href='https://www.jetbrains.com/help/idea/work-with-gradle-projects.html#project_encodings'>project
+			settings</a> in the <span class='filepath'>build.gradle</span> file.
+	</li>
+	<li>correctly opening a project that contains both regular IntelliJ IDEA modules and Gradle modules.</li>
+	<li>accessing a project faster when you open it since IntelliJ IDEA reads the <span class='filepath'>.iml</span>
+		files first and then starts the importing process.
+	</li>
+</ul>
+<p><q>When you make changes in your Gradle project, the <span class='filepath'>.iml</span> files get changed as well so
+	don't forget to push them along with the other project's changes under VCS.</q></p>
+
+</body>
+</html>

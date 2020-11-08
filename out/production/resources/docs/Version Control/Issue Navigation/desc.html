@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Use this dialog to create a list of the so-called <span class='emphasis'>issue navigation patterns</span>. <span
+		class='emphasis'>An issue navigation pattern</span> maps an <span class='emphasis'>issue ID pattern</span> in
+	commit messages with the URL addresses of the referenced issues. This enables you to navigate from committed changes
+	to issues related to these changes. As soon as IntelliJ IDEA encounters a match to the issue ID pattern in a commit
+	message, the match is displayed as a link in the <span class='keyword'>Version Control</span> tool window
+	<kbd>Alt+9</kbd>. If you mention several issues, all of them will be displayed as links. Clicking such link opens
+	the matching issue in the default browser.</q></p>
+<img src='./Issue%20Navigation.png' alt='' />
+<hr />
+
+<p><q>The example below shows how IntelliJ IDEA applies the abovementioned rules to detect a reference to an issue in a
+	commit message and compose a link to it in the issue tracking system.</q></p>
+<table>
+	<tr>
+		<td>Issue ID pattern</td>
+		<td>
+			<p>The regular expression that defines the format in which issues are referenced in commit messages.</p>
+			<pre>[A-Z]+\-\d+</pre>
+			<p>This regular expressions matches all character strings that consist of two substrings separated by an
+				n-dash character:</p>
+			<ol>
+				<li>Substring 1: An unlimited number of upper case alphabetic characters.</li>
+				<li>Substring 2: An unlimited number of digital characters.</li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<td>Issue link pattern</td>
+		<td>
+			<p>A combination of the URL address of your issue tracking system and a regular expression that identifies
+				issues in it.</p>
+			<pre>http://mytracker/issue/$0</pre>
+			<p>Here <code>$0</code> indicates a back reference to the entire match. This means that as soon as IntelliJ
+				IDEA detects a match in a commit message, it is added to the URL address of the tracker as is.</p>
+		</td>
+	</tr>
+	<tr>
+		<td>Matching issue ID</td>
+		<td>
+			<p>IntelliJ IDEA detects the following reference to an issue in the commit message of interest:</p>
+			<pre>MYPROJECT-110</pre>
+		</td>
+	</tr>
+	<tr>
+		<td>Composed issue link</td>
+		<td>
+			<p>In accordance with the above issue navigation pattern, the detected matching reference is added to the
+				URL of the tracker as is, so the link to the referenced issue is composed as follows:</p>
+			<pre>http://mytracker/issue/MYPROJECT-110</pre>
+		</td>
+	</tr>
+</table>
+<hr />
+
+<p><q>Use the <span class='keyword'>Add Issue Navigation Link</span> dialog to create an issue pattern and navigation
+	link to a bug tracking system.</q></p>
+<p><q>(Refer to <a href='https://www.jetbrains.com/help/idea/regular-expression-syntax-reference.html'>Regular
+	Expressions Syntax Reference</a> for details on using special characters in regular expressions.)</q></p>
+<ul>
+	<li>Issue ID (regular expression):
+		In this field, type a regular expression that will be converted to a specific issue id.
+	</li>
+	<li>Issue link (replacement expression):
+		In this field, type a regular expression that will be converted to a navigation link to the issue.
+	</li>
+	<li>Example:
+		In this section, type some specific issue id to make sure it matches the specified pattern.
+	</li>
+</ul>
+<p><q>For more information, refer to <a href='https://www.jetbrains.com/help/idea/handling-issues.html'>VCS integration
+	with issue trackers</a>.</q></p>
+
+</body>
+</html>

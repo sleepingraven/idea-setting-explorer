@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>In this area, configure auto-import from the global namespace separately for classes, functions, and
+	constants.</q></p>
+<ul>
+	<li>Prefer FQN:
+		If selected, IntelliJ IDEA automatically inserts the fully-qualified name of a symbol from the <span
+				class='feature'>global namespace</span>, prepended with a backslash, for example:
+		<pre>namespace A;
+
+$myException = new \Exception();
+$a = \strlen("Test");
+echo \PHP_EOL;</pre>
+	</li>
+	<li>Prefer Import:
+		If selected, IntelliJ IDEA automatically adds <code>use</code> statements for symbols from the <span
+				class='feature'>global namespace</span> if this doesn’t result in a conflict, for example:
+		<pre>namespace A;
+
+use Exception;
+use const PHP_EOL;
+use function strlen;
+
+$myException = new Exception();
+$a = strlen("Test");
+echo PHP_EOL;</pre>
+	</li>
+	<li>Prefer Fallback:
+		If selected, IntelliJ IDEA neither inserts a fully-qualified name of a function or a constant, nor imports them
+		by means of the <code>use</code> statement. The <a
+				href='http://php.net/manual/en/language.namespaces.fallback.php'>fallback</a> global functions or
+		constants are preferred in this case, for example:
+		<pre>namespace A;
+
+use Exception;
+
+$myException = new Exception();
+$a = strlen("Test");
+echo PHP_EOL;</pre>
+	</li>
+</ul>
+
+</body>
+</html>

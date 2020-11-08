@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Use this page to configure capture points to facilitate debugging of asynchronous code.</q></p>
+<p><q>A capture point is a place in your code where the debugger captures stack traces to be used later when you reach a
+	specific point in the code (the insertion point) and want to see how you got there. IntelliJ IDEA does this by
+	substituting part of the call stack with a captured stack.</q></p>
+<p><q>Asynchronous stack traces are enabled by default. To disable them, deselect the <span class='composite'>Instrumenting agent (requires debugger restart)</span>
+	option. The most common capture points are built-in, so no configuration is required.</q></p>
+<p><q>If you need to use capture points that are not included in the default configuration, you can use the <code>Async.Schedule</code>
+	and <code>Async.Execute</code> annotations that reside in the <a
+			href='https://mvnrepository.com/artifact/org.jetbrains/annotations/16.0.2'>public JetBrains annotations
+		package</a> and can be referenced in your code. To use them, add this Maven repository as a dependency for your
+	artifacts.</q></p>
+<p><q>(If, for some reason, you do not want to use the Maven repository, you can simply copy these annotations and add
+	them as classes to your project.)</q></p>
+<p><q>If you cannot use annotations or need to be able to capture local variables, you can configure capture points
+	manually by using the following controls:</q></p>
+<p><q>(You can download some additional capture settings from the following repository: <a
+		href='https://github.com/JetBrains/capture-points'>IntelliJ IDEA debugger Capture Points</a>.)</q></p>
+<img src='./Async%20Stack%20Traces.png' alt='' />
+<ul>
+	<li>Capture class name:
+		enter the name of the class at the top of the stack trace you want to capture.
+	</li>
+	<li>Capture method name:
+		enter the name of the method at the top of the stack trace you want to capture.
+	</li>
+	<li>Capture key expression:
+		enter the capture key expression. The capture key expression is evaluated and the value is used as the key.
+	</li>
+	<li>Insert class name:
+		enter the name of the class where you want to insert the captured stack trace.
+	</li>
+	<li>Insert method name:
+		enter the name of the method where you want to insert the captured stack trace.
+	</li>
+	<li>Insert key expression:
+		enter the key expression that will be evaluated and this value will be matched with the key in the captured
+		stack.
+	</li>
+</ul>
+
+</body>
+</html>

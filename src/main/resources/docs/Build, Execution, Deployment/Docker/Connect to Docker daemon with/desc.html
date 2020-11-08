@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Select the method for connecting to the Docker API.</q></p>
+<ul>
+	<li>Docker for Windows:
+		The recommended option when using Docker Desktop for Windows.
+	</li>
+	<li>Docker for Mac:
+		The recommended option when using Docker Desktop for Mac.
+	</li>
+	<li>Unix socket:
+		This is the recommended connection option for Linux.
+		<p>(If you get <span class='emphasis'>permission denied</span> errors, add the current user to the <span
+				class='keyword'>docker</span> group on the machine, log out, and then log back in.)</p></li>
+	<li>Docker Machine:
+		If you are using Docker Toolbox for Windows or macOS, this is the recommended option for connecting to the
+		Docker API. If the <span class='emphasis'>Connection successful</span> message doesn't appear, check your <span
+				class='keyword'>Docker Machine executable</span> setting on the <span
+				class='composite'>Docker | Tools</span> page.
+	</li>
+	<li>TCP socket:
+		This method should work for any Docker version and operating system.
+		<ul>
+			<li>Windows:
+				<ul>
+					<li>
+						If you are using Docker Desktop and want to connect through the TCP socket, enable the <span
+							class='keyword'>Expose daemon on tcp://localhost:2375 without TLS</span> option in the <span
+							class='keyword'>General</span> section of your Docker settings. Then set <span
+							class='composite'>Engine API URL</span> to <code>tcp://localhost:2375</code>.
+						<p>If the option is disabled, then you can connect through a named pipe: <code>npipe:////./pipe/docker_engine</code>.
+						</p>
+						<p>Leave the <span class='composite'>Certificates folder</span> field empty.</p>
+					</li>
+					<li>
+						If you are using Docker Toolbox, set <span class='composite'>Engine API URL</span> to <code>https://192.168.99.100:2376</code>
+						and <span class='composite'>Certificates folder</span> to <code>%HOMEPATH%\.docker\machine\machines\default</code>.
+					</li>
+				</ul>
+			</li>
+			<li>macOS:
+				<ul>
+					<li>
+						If you are using Docker Desktop, set <span class='composite'>Engine API URL</span> to <code>unix:///var/run/docker.sock</code>
+						and leave the <span class='composite'>Certificates folder</span> field empty.
+					</li>
+					<li>
+						If you are using Docker Toolbox, set <span class='composite'>Engine API URL</span> to <code>https://192.168.99.100:2376</code>
+						and <span class='composite'>Certificates folder</span> to <code>~/.docker/</code>.
+					</li>
+				</ul>
+			</li>
+			<li>Linux:
+				<ul>
+					<li>Engine API URL:
+						<code>unix:///var/run/docker.sock</code></li>
+					<li>Certificates folder:
+						leave empty
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<p>(Since the <span class='composite'>Certificates folder</span> field specifies any folder with certificates,
+			this field corresponds to the <code>DOCKER_CERT_PATH</code> environment variable. For more information, see
+			<a href='https://docs.docker.com/engine/security/https/#client-modes'>Client modes</a> in the Docker
+			documentation.)</p>
+	</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>The selected option defines how the name of an object is inserted in the editor when using the code completion
+	suggestion box.</q></p>
+<ul>
+	<li>Always:
+		the qualified object names are always used, for example <code>&lt;schema_name&gt;.&lt;object_name&gt;</code>.
+	</li>
+	<li>On collisions:
+		the qualified object name is used only if the short name is ambiguous, for example when there is the object with
+		the same name in more than one schema.
+	</li>
+	<li>Never:
+		the unqualified object names are always used.
+	</li>
+</ul>
+
+</body>
+</html>

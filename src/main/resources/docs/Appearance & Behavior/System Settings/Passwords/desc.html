@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>By default, IntelliJ IDEA saves your passwords for version control repositories, databases, and other protected
+	resources. Configure the way the passwords are saved:</q></p>
+<ul>
+	<li>In native Keychain:
+		<p>Use the native keychain app.</p>
+		<p>This option is not available for Windows. macOS uses Keychain Access. For Linux, it depends on the desktop
+			environment and available apps: if you have both GNOME Keyring and KWallet, IntelliJ IDEA will use GNOME
+			Keyring
+			for compatibility reasons because KWallet was not supported in previous versions.</p>
+	</li>
+	<li>In KeePass:
+		Use the <a href='http://keepass.info/'>KeePass</a> password manager.
+		<ul>
+			<li>Database:
+				<p>Specifies the location of the password database file <span class='keyword'>c.kdbx</span>.</p>
+				<p>To change the location, click <span class='widget'>the Browse button</span> and select the new
+					directory. To import another <span class='keyword'>c.kdbx</span> file, click <span class='widget'>the Settings menu</span>
+					and select <span class='keyword'>Import</span>. To remove the existing passwords in the <span
+							class='keyword'>c.kdbx</span>
+					file, select <span class='keyword'>Clear</span> .</p>
+				<p>Use the master password to access the password database <span class='keyword'>c.kdbx</span>. To set
+					the master password for the database, click <span class='widget'>the Settings menu</span> and select
+					<span class='keyword'>Set Master Password</span> . When IntelliJ IDEA remembers your passwords, it
+					will not ask for the passwords again including the master password unless you need to access the
+					password database.</p>
+			</li>
+			<li>Protect master password using PGP key:
+				Encrypt the master password for the password database using PGP.
+			</li>
+		</ul>
+	</li>
+	<li>Do not save, forget passwords after restart:
+		Do not remember any passwords and always prompt for credentials to protected resources.
+	</li>
+</ul>
+<hr />
+
+<p><q>The <span class='keyword'>Password Manager Database Updated</span> dialog opens only once when you launch a new
+	IntelliJ IDEA version with configurations from the previous IntelliJ IDEA version.</q></p>
+<p><q>IntelliJ IDEA lets you convert the current saved password database into a new one.</q></p>
+<hr />
+
+<p><q>If your master password is not set yet, you can open the <span class='keyword'>Setup Master Password</span> dialog
+	by clicking <span class='keyword'>Master Password</span> on the <span class='composite'>Passwords</span> page. In
+	certain circumstances, this dialog may also open automatically.</q></p>
+<p><q>Specify the password that you want to be set as your master password. ( The master password is used to access the
+	IntelliJ IDEA password database where - if so specified - your passwords are stored. Instead of the individual
+	passwords, you'll be able to use your master password.)</q></p>
+<p><q>You can set the password empty. As a result, IntelliJ IDEA won't ask you for the password when accessing the
+	password database. However, the security of your passwords in that case will be lower.</q></p>
+<hr />
+
+<p><q>If your master password is already set, you can open the <span class='keyword'>Change Master Password</span>
+	dialog by clicking <span class='keyword'>Master Password</span> on the <span class='composite'>Passwords</span>
+	page.</q></p>
+<p><q>Specify your current master password, and then a new master password. (The master password is used to access the
+	IntelliJ IDEA password database where - if so specified - your passwords are stored.)</q></p>
+<p><q>You can set the new password empty. As a result, IntelliJ IDEA won't ask you for the password when accessing the
+	password database. However, the security of your passwords in that case will be lower.</q></p>
+<p><q>If you don't remember the current password, you can reset the master password (click <span
+		class='keyword'>Reset</span>).</q></p>
+<hr />
+
+<p><q>The <span class='keyword'>Enter Master Password</span> dialog opens automatically when IntelliJ IDEA needs to
+	access its password database to retrieve the necessary password.</q></p>
+<p><q>Specify your master password.</q></p>
+<p><q>If you don't remember the password, you can reset it (click <span class='keyword'>Reset</span>).</q></p>
+<hr />
+
+<p><q>The <span class='keyword'>Master Password / Reset Master Password</span> dialog opens when you click <span
+		class='keyword'>Reset</span> in the <span class='keyword'>Enter Master Password</span> or the <span
+		class='keyword'>Change Master Password</span> dialog.</q></p>
+<p><q>(If you reset the master password, all your passwords currently stored in the password database will be lost.)</q>
+</p>
+<p><q>Specify your new master password.</q></p>
+<p><q>You can set the password empty. As a result, IntelliJ IDEA won't ask you for the password when accessing the
+	password database. However, the security of your passwords in that case will be lower.</q></p>
+<p><q>To come back to the previous dialog, click <span class='keyword'>Enter or Change</span>.</q></p>
+
+</body>
+</html>

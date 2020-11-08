@@ -1,0 +1,159 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<xs:schema targetNamespace="app-source-data"
+           xmlns="app-source-data"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+>
+	<!-- useful reference: complexContent -->
+
+	<!-- type definitions -->
+
+	<xs:simpleType name="compNameType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="carry.common.data.AppPersistence" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="titleNameType">
+		<xs:restriction base="xs:string">
+			<!-- <xs:pattern value="\S(.*\S+)*" /> -->
+			<xs:pattern value="\S+( \S+)*" />
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="descNameType">
+		<xs:restriction base="xs:string">
+			<!-- <xs:pattern value="\S(.*\S+)*" /> -->
+			<xs:pattern value="\S+( \S+)*" />
+			<xs:minLength value="1" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="tagType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\[\S([^,]*[^,\s]+)*(, \S([^,]*[^,\s]+)*)*\]" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="ConfigType">
+
+		<xs:sequence>
+			<xs:element ref="Point" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element ref="Bag" minOccurs="0" maxOccurs="unbounded" />
+			<xs:element ref="Config" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+		<xs:attributeGroup ref="DetailTitleStyle" />
+
+	</xs:complexType>
+
+	<xs:complexType name="BagType">
+
+		<xs:choice>
+			<xs:sequence>
+				<xs:element ref="Point" maxOccurs="unbounded" />
+				<!-- <xs:element ref="Bag" minOccurs="0" maxOccurs="unbounded" /> -->
+			</xs:sequence>
+			<!--<xs:sequence>
+				<xs:element ref="Point" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element ref="Bag" maxOccurs="unbounded" />
+			</xs:sequence>-->
+		</xs:choice>
+		<xs:attributeGroup ref="DetailTitleStyle" />
+
+	</xs:complexType>
+
+	<xs:complexType name="PointType">
+		<xs:attributeGroup ref="DetailDescStyle" />
+	</xs:complexType>
+
+	<!-- attribute definitions -->
+	<!-- attributes' order not considered -->
+
+	<xs:attributeGroup name="DetailTitleStyle">
+		<xs:annotation>
+			<xs:documentation>
+				Detail attributes.
+			</xs:documentation>
+		</xs:annotation>
+
+		<xs:attribute name="name" type="titleNameType" use="required" />
+		<xs:attribute name="tags" type="tagType" />
+
+	</xs:attributeGroup>
+
+	<xs:attributeGroup name="DetailDescStyle">
+		<xs:annotation>
+			<xs:documentation>
+				Detail attributes.
+			</xs:documentation>
+		</xs:annotation>
+
+		<xs:attribute name="name" type="descNameType" use="required" />
+		<xs:attribute name="tags" type="tagType" />
+
+	</xs:attributeGroup>
+
+	<!-- element definitions -->
+
+	<xs:element name="Config" type="ConfigType">
+		<xs:annotation>
+			<xs:documentation>
+				A ConfigWrapper tag.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="Bag" type="BagType">
+		<xs:annotation>
+			<xs:documentation>
+				A Bag tag.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<xs:element name="Point" type="PointType">
+		<xs:annotation>
+			<xs:documentation>
+				A Point tag.
+			</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+
+	<!-- root tag -->
+	<xs:element name="application">
+		<xs:complexType>
+
+			<xs:sequence>
+				<xs:element name="component">
+					<xs:complexType>
+
+						<xs:sequence>
+							<xs:element name="composites">
+								<xs:complexType>
+
+									<xs:sequence>
+										<!-- an error appears if use ref -->
+										<xs:element name="Config" type="ConfigType">
+											<xs:annotation>
+												<xs:documentation>
+													The root ConfigWrapper tag.
+												</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="name" type="compNameType" />
+
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

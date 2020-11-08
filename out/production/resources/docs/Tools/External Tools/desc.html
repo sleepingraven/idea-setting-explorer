@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Definethird-party standalone applications (code generators and analyzers, pre- and post- processors, database
+	utilities, etc.) as external tools to be able to run them from IntelliJ IDEA.</q></p>
+<p><q>You can pass contextual information (like the currently selected file, or your project source path) to the
+	external tools, view the tool output, and more.</q></p>
+<p><q>The tools defined on this page appear as commands in the <span class='keyword'>Tools</span> menu and in various
+	context menus. They can also be assigned keyboard shortcuts (see the <a
+			href='https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html'>Configuring
+		Keyboards and Mouse Shortcuts</a> section).</q></p>
+<p><q>Use the checkboxes to enable or disable the tools and the tool groups. The items that are not currently selected
+	are not available in the <span class='keyword'>Tools</span> and context menus.</q></p>
+<hr />
+
+<p>You can edit the settings for your external tool in the <span class='keyword'>Create/Edit/Copy Tool</span> dialog.
+</p>
+<p><q>(External tools provide the absolute path of the files, not project-directory-relative ones!)</q></p>
+<img src='./External%20Tools.png' alt='' />
+<ul>
+	<li>Name:</li>
+	The name of the tool that appears as a command name in the <span class='keyword'>Tools</span> menu and the context
+	menus.
+	<li>Group:
+		The group the tool belongs to. The tool groups correspond to submenus in the <span class='keyword'>Tools</span>
+		menu and the context menus.
+		<p>Select an existing group from the list.</p>
+		<p>To create a new group, type its name in the list.</p>
+	</li>
+	<li>Description:
+		The tool description (optional).
+	</li>
+	<li>Tool Settings:
+		<ul>
+			<li>Program:
+				The path to the executable file to be run.
+				<p>(Macros are resolved at runtime and let you specify context information such as currently selected
+					file, your project source paths, and so on)</p>
+			</li>
+			<li>Arguments:
+				The arguments to be passed to the program the way you'd specify them on the command line.
+				<p>When specifying the arguments, follow these rules:</p>
+				<ul>
+					<li><span class='keyword'>Note</span> that external tools provide the absolute path of the files,
+						not project-directory-relative ones.
+					</li>
+					<li>Use spaces to separate individual arguments.</li>
+					<li>If an argument includes spaces, enclose the spaces or the argument that contains the spaces in
+						double quotes, for example, <code>some" "arg</code> or <code>"some arg"</code>.
+					</li>
+					<li>If an argument includes double quotes (for example as part of the argument), escape the double
+						quotes by means of the backslashes, for example, <code>-Dmy.prop=\"quoted_value\"</code>.
+					</li>
+				</ul>
+			</li>
+			<li>Working directory:
+				The path to the current working directory for the program.
+			</li>
+		</ul>
+	</li>
+	<li>Advanced Options:
+		<ul>
+			<li>Synchronize files after execution:
+				Make IntelliJ IDEA aware of changes in the file system when the tool completes its execution.
+			</li>
+			<li>Open console for tool output:
+				Open the console for viewing the tool output such error messages, etc.
+			</li>
+			<li>Make console active on message in stdout:
+				Make the output console active and bring it forward when the corresponding event occurs.
+			</li>
+			<li>Make console active on message in stderr:
+				The same as the previous option but for stderr.
+			</li>
+			<li>Output Filters:
+				The output filters are used to turn absolute file paths and line numbers in the tool output into
+				hyperlinks. You'll be able to use those links to open the corresponding files in the editor. You can
+				specify one or several filters. Each line is a regular expression. You can use the following macros:
+				<code>$FILE_PATH$</code>, <code>$LINE$</code> and <code>$COLUMN$</code>, for example,
+				<pre>$FILE_PATH$:$LINE$:$COLUMN$:.*</pre>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+</body>
+</html>

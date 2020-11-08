@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Select the format of the documentation strings to be recognized by IntelliJ IDEA.</q></p>
+<p><q>Depending on the selected docstring format, IntelliJ IDEA will generate the stub documentation comments and render
+	text in the <a
+			href='https://www.jetbrains.com/help/idea/viewing-reference-information.html#inline-quick-documentation'>show
+		quick documentation</a>:</q></p>
+<ul>
+	<li>Plain:
+		on pressing <kbd>Enter</kbd> or Space after opening quotes, an empty stub is generated; quick documentation
+		shows as plain text.
+	</li>
+	<li>eStructuredText:
+		on pressing <kbd>Enter</kbd> or Space after opening quotes, stub doc comment is generated according to <a
+				href='http://docutils.sourceforge.net/rst.html'>reStructuredText</a> format; the quick documentation is
+		rendered by Docutils.
+	</li>
+	<li>Epytext:
+		on pressing <kbd>Enter</kbd> or Space after opening quotes, stub doc comment is generated according to the <a
+				href='http://epydoc.sourceforge.net/'>epytext</a> format; quick documentation is rendered by <a
+				href='http://epydoc.sourceforge.net/'>epydoc</a>.
+	</li>
+	<li>NumPy:
+		on pressing <kbd>Enter</kbd> or Space after opening quotes, stub doc comment is generated according to the <a
+				href='http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_numpy.html'>umPy</a> format; the
+		quick documentation is rendered by <a
+				href='https://sphinxcontrib-napoleon.readthedocs.org/en/latest/'>Napoleon</a> and Docutils.
+	</li>
+	<li>Google:
+		on pressing <kbd>Enter</kbd> or Space after opening quotes, stub doc comment is generated according to <a
+				href='http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html'>Google</a> format;
+		the quick documentation is rendered by <a href='https://sphinxcontrib-napoleon.readthedocs.io/en/latest/'>Napoleon</a>
+		and Docutils.
+	</li>
+</ul>
+<p><q>All types of docstrings feature:</q></p>
+<ul>
+	<li>Proper generation of docstrings</li>
+	<li>Updates after applying intention actions and quick-fixes</li>
+	<li>Coding assistance</li>
+	<li>Autocompletion for section headers</li>
+</ul>
+<p><q>Note that the information provided in the docstrings, is used for code insight.</q></p>
+<img src='./Docstring%20format.png' alt='' />
+
+</body>
+</html>

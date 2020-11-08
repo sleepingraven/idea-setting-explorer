@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Click one of the radio buttons in this area to select the level of analysis and performance of the language
+	injections resolution procedure.</q></p>
+<ul>
+	<li>Do not analyze (fast):
+		if this option is selected, IntelliJ IDEA does not analyze injections.
+		<p><q>(Selecting the <span class='composite'>Do not analyze</span> option significantly improves
+			performance.)</q></p>
+	</li>
+	<li>Analyze references:
+		if this option is selected, IntelliJ IDEA attempts to recognize injections introduced through variables.
+	</li>
+	<li>Look for variable assignments:
+		if this option is selected, IntelliJ IDEA does not perform the dataflow analysis to detect the substitution
+		strings, but looks for variable assignments only.
+	</li>
+	<li>Use dataflow analysis (slow):
+		if this option box is selected, IntelliJ IDEA applies <a
+				href='https://www.jetbrains.com/help/idea/analyzing-data-flow.html'>dataflow analysis</a> to language
+		injections.
+	</li>
+</ul>
+
+</body>
+</html>

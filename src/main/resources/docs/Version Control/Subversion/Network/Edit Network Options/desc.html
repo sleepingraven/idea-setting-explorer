@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Click this button to change Subversion runtime configuration file in the <span class='keyword'>Edit Subversion options related to the network layers</span>
+	dialog.</q></p>
+<hr />
+
+<p><q>In the <span class='keyword'>Edit Subversion options related to the network layers</span> dialog, specify the
+	Subversion network settings stored in the servers Subversion runtime configuration file.</q></p>
+<p><q>The dialog contains two tabs:</q></p>
+<ul>
+	<li>System file:
+		this tab displays the default network configuration settings specified by the system administrator.
+	</li>
+	<li>User file:
+		in this tab, customize the default network configuration settings.
+	</li>
+</ul>
+<p><q>The dialog consists of two panes:</q></p>
+<ul>
+	<li>
+		On the left-hand pane, add, edit, and remove configuration profiles. Network configuration settings are arranged
+		into profiles of two types:
+		<ul>
+			<li>Group:
+				settings from such profile apply to a specific group, defined by a glob pattern.
+			</li>
+			<li>Global:
+				settings from this profile are applied to all servers that do not match any glob pattern.
+			</li>
+		</ul>
+	</li>
+	<li>
+		On the right-hand pane, specify the settings for the selected configuration profile.
+	</li>
+</ul>
+<img src='./Edit%20Subversion%20Options%20Related%20to%20Network%20Layers%20Dialog.png' alt='' />
+<ul>
+	<li>HTTP Proxy Settings
+		<ul>
+			<li>URL Patterns:
+				In this field, type the patterns that define the URL addresses of repositories to be accessed via proxy.
+				Use commas to separate patterns.
+			</li>
+			<li>Exceptions:
+				In this field, type the patterns that define the URL addresses of repositories to be accessed directly,
+				without using proxy. Use commas to separate patterns.
+			</li>
+			<li>Server:
+				In this field, specify the name or IP address of the proxy server to use.
+			</li>
+			<li>Port:
+				In this field, specify the port number the proxy server listens to.
+			</li>
+			<li>Connection timeout:
+				In this field, specify the time period in seconds after when the Subversion client cancels its attempts
+				to establish connection to the server.
+			</li>
+			<li>User:
+				In this field, type the username or login to authenticate at the specified proxy server.
+			</li>
+			<li>Password:
+				In this field, type the password that matches the specified login or username.
+			</li>
+		</ul>
+	</li>
+	<li>SSL Settings
+		<ul>
+			<li>Comma separated paths to CAs certificate files:
+				In this field, specify the paths to files that contain certificates of the <a
+						href='http://www.openssl.org/docs/apps/ca.html#'>Certificate Authority (CAs)</a> files that are
+				accepted by the Subversion client when accessing the repository.
+			</li>
+			<li>SSL client certificate file:
+				In this field, specify the location of the SSL client certificate file. Type the path to the file
+				manually or click <span class='keyword'>Browse</span> <span class='widget'>the Browse button</span> and
+				choose the location in the <a href='https://www.jetbrains.com/help/idea/select-path-dialog.html'>dialog
+					that opens</a>.
+			</li>
+			<li>SSL client certificate passphrase:
+				In this field, type the SSL client certificate passphrase to use.
+			</li>
+			<li>Trust default CAs:
+				Select this checkbox to have the Subversion integration trust the set of default <a
+						href='http://www.openssl.org/docs/apps/ca.html#'>Certificate Authority</a> files shipped with <a
+						href='http://www.openssl.org/'>OpenSSL</a>.
+			</li>
+		</ul>
+	</li>
+	<li>Repositories
+		<ul>
+			<li>Repositories:
+				This list displays the URL addresses of the previously accessed repositories.
+			</li>
+			<li>Test connection:
+				Click this button to make sure that connection to the selected repository can be established
+				successfully according to the settings specified in the dialog.
+				<p>(When you click this button, IntelliJ IDEA displays the <a
+						href='https://www.jetbrains.com/help/idea/authentication-required.html'>Authentication
+					Required</a> dialog.)</p>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+</body>
+</html>

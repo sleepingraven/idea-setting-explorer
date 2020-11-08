@@ -1,0 +1,44 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.8" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.CardLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0:1.0"
+				"$rowSpecs": "20, 4:1.0"
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "mainPanel"
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "mainPanelFocusGained", true ) )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField"
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "textFieldKeyPressed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "list"
+						"model": new javax.swing.DefaultListModel {
+							addElement( "123" )
+							addElement( "4" )
+							addElement( "56" )
+						}
+						"selectedIndex": 0
+						"selectionMode": 0
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "listMousePressed", true ) )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "card1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 625, 445 )
+		} )
+	}
+}

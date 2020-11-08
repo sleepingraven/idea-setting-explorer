@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<ul>
+	<li>Module Names:
+		This column shows the names of the modules, whose documentation you want to have visible in browser on invoking
+		<span class='keyword'>View | External Documentation</span>, or pressing <kbd>Shift+F1, for example, <span
+				class='keyword'>pandas</span>.</li>
+	<li>URL Pattern:
+		This column shows existing patterns of the URLs to the external documentation, or its local address, for
+		example, <span
+				class='filepath'>https://pandas.pydata.org/pandas-docs/stable/generated/{element.qname}.html</span>.
+		<p>If external documentation resides locally, specify the local path to it .</p>
+	</li>
+</ul>
+<hr />
+
+<p>The <span class='keyword'>Add/Edit Documentation URL</span> dialog appears when double-clicking an entry in the
+	table, or clicking the add/edit button.</p>
+<ul>
+	<li>Module name:
+		Type module name in the text field.
+	</li>
+	<li>URL pattern:
+		In this text field, create the desired pattern, using plain text and macros from the <span class='keyword'>Available Macros</span>
+		field.
+		<img src='./Edit%20Documentation%20URL.png' alt='' />
+		<p>Note that each documentation module has its specific structure, so be careful when adding macros.</p>
+	</li>
+	<li>Insert:
+		Click this button to add the selected macro to the pattern.
+	</li>
+</ul>
+
+</body>
+</html>

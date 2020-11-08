@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>On this page, you can configure the following:</q></p>
+<ul>
+	<li>Integrate installations of Web browsers with IntelliJ IDEA, activate or deactivate launching Web browsers from
+		IntelliJ IDEA.
+	</li>
+	<li>Specify whether a browser will be launched by running its executable file or through the default system
+		command.
+	</li>
+	<li>Appoint the <span class='emphasis'>default IntelliJ IDEA browser</span> in which IntelliJ IDEA will <a
+			href='https://www.jetbrains.com/help/idea/editing-html-files.html'>open HTML and JSP files</a> upon request
+		by default, that is, when no browser is specified explicitly.
+	</li>
+</ul>
+<p><q>For more information, see <a
+		href='https://www.jetbrains.com/help/idea/configuring-third-party-tools.html#web-browsers'>Web browsers</a>.</q>
+</p>
+<hr />
+
+<p><q>In the <span class='keyword'>Browsers</span> section, specify which browsers will be available for previewing HTML
+	or JSP output. The section shows the browsers from the predefined list and the previously configured custom browser
+	installations, if any.</q></p>
+<p><q>IntelliJ IDEA is shipped with a predefined list of most popular browsers that you may install and launch
+	automatically from the IDE during running, debugging, or <a
+			href='https://www.jetbrains.com/help/idea/editing-html-files.html#ws_html_preview_output'>previewing the
+		output of an HTML file</a>. IntelliJ IDEA presumes that you install browsers according to a standard procedure
+	and assigns each installation an <span class='emphasis'>alias</span> which stands for the default path to the
+	browser's executable file or macOS application. If in your actual browser installation the path to the executable
+	file is different, you need to specify it explicitly in the <span class='keyword'>Path</span> field.</q></p>
+<p><q>In addition to the predefined browsers, you can configure as many custom browser installations as you need using
+	the controls on the toolbar.</q></p>
+<ul>
+	<li>Active:
+		Select this checkbox to enable the use of the respective browser from IntelliJ IDEA. The browser will be added
+		to the context menu of the <span class='keyword'>Open in Browser</span> menu item and its icon will be displayed
+		in the browser icons popup.
+		<p>If this checkbox is cleared, the corresponding browser icon will not appear in the icons toolbar or
+			popup.</p>
+	</li>
+	<li>Name:
+		In this column, specify the browser name.
+	</li>
+	<li>Family:
+		In this column, specify the family to which the browser belongs.
+	</li>
+	<li>Path:
+
+		In this column, specify the path to the executable. If the browser was installed according to a standard
+		installation procedure, most likely the <span class='emphasis'>alias</span> in the <span
+				class='keyword'>Path</span> field points at the right location. If it does not, click <span
+				class='widget'>the Browse button</span> and select the actual path in the <a
+				href='https://www.jetbrains.com/help/idea/select-path-dialog.html'>dialog that opens</a>. In the dialog
+		that opens, choose the path to the executable file of the corresponding browser.
+	</li>
+</ul>
+<hr />
+
+<p><q>Click <span class='widget'>the Edit button</span> to specify a custom profile for <span
+		class='emphasis'>Firefox</span> or a browser of the <span class='emphasis'>Chrome</span> family. The button is
+	available only when <span class='keyword'>Firefox</span> and <span class='keyword'>Chrome</span> are selected.</q>
+</p>
+<ul>
+	<li>
+		In the <span class='keyword'>Firefox Settings</span> dialog, specify the <a
+			href='http://support.mozilla.com/en-US/kb/Profiles'>Firefox browser profile</a> to use for previewing
+		output:
+		<ul>
+			<li>Path to "profiles.ini":
+				in this field, specify the location of the <span class='filepath'>profiles.ini</span> file, which
+				determines the Firefox profile to be used.
+			</li>
+			<li>Profile:
+				from this list, select the desired predefined profile to use. Learn more at <a
+						href='https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data?redirectslug=Profiles&redirectlocale=en-US'>Firefox
+					browser profile</a>.
+			</li>
+		</ul>
+	</li>
+	<li>
+		In the <span class='keyword'>Chrome Settings</span> dialog:
+		<ul>
+			<li>Command line options:
+				In this field, enter the command-line options to launch an instance of Chrome. If you need more space,
+				click <span class='widget'>the Expand icon</span>, or press <kbd>Shift+Enter</kbd> to open the editor
+				box. Learn more about Chrome command-line options by opening <code>chrome://flags</code> in <span
+						class='emphasis'>Chrome</span>.
+			</li>
+			<li>Use custom user data directory:
+				Select this checkbox to define a user-specific Chrome profile settings to use and specify the location
+				of the <a href='https://chromium.googlesource.com/chromium/src/+/master/docs/user_data_dir.md'>user data
+					directory</a> in the IntelliJ IDEA settings.
+			</li>
+		</ul>
+	</li>
+</ul>
+
+</body>
+</html>

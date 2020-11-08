@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Select how IntelliJ IDEA should process references to missing classes and methods in pasted blocks of code:</q>
+</p>
+<ul>
+	<li>All:
+		import statements will be added automatically for all missing classes and methods found in pasted blocks of
+		code.
+	</li>
+	<li>Ask:
+		IntelliJ IDEA will prompt you to select which classes and methods you want to import.
+		<p>If the pasted class is already referenced in the target code <a
+				href='http://php.net/manual/en/language.namespaces.importing.php'>via an alias</a>, IntelliJ IDEA will
+			prompt you to reuse this alias instead of creating a new import statement.</p>
+		<img src='Insert imports on paste.png' alt='' />
+	</li>
+	<li>None:
+		no import statements will be added, you won't be asked about unresolved references.
+	</li>
+</ul>
+<p>Note that adding imports on paste is only possible if the copied element is properly resolved in code (that is, not
+	highlighted by the <span class='feature'>Undefined class</span> or <span class='feature'>Undefined method</span>
+	inspections), and project indexing is finished.</p>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>This area displays the list of user-defined dictionary files, which can be any of the following:</q></p>
+<ul>
+	<li>
+		The built-in <span class='emphasis'>project-level</span> and <span class='emphasis'>application-level</span>
+		dictionaries, which you populate by manually saving words to them.
+	</li>
+	<li>
+		Plain text files with the <span class='filepath'>DIC</span> extension, containing words separated with a new
+		line.
+	</li>
+	<li>
+		Hunspell dictionaries, comprise two plain text files commonly sharing the same name, for example, <span
+			class='filepath'>en_GB.dic</span> and <span class='filepath'>en_GB.aff</span>. The <span class='filepath'>DIC</span>
+		file contains a list of words together with the applicable modification rules. The <span
+			class='filepath'>AFF</span> file lists prefixes and suffixes regulated by a specific modification rule.
+		Hunspell dictionaries can be easily obtained online, for example, <a
+			href='https://github.com/LibreOffice/dictionaries'>here</a>.
+	</li>
+</ul>
+<p><q>(Hunspell support is provided by the corresponding <span class='keyword'>Hunspell</span> plugin. The plugin is not
+	bundled with IntelliJ IDEA, but it can be installed on the <span
+			class='composite'>Settings/Preferences | Plugins</span> page as described in <a
+			href='https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_repo'>Installing plugins
+		from JetBrains repository</a>.)</q></p>
+
+</body>
+</html>

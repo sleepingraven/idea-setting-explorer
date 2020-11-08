@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>This page lets you specify the data sources, databases and schemas that should be used to resolve unqualified
+	(short) names of database object in your SQL files.</q></p>
+<p><q>(For this page to be available, the Database Tools and SQL plugin must be enabled. See <a
+		href='https://www.jetbrains.com/help/idea/managing-plugins.html'>Manage plugins</a>.)</q></p>
+<hr />
+
+<p><q>The <span class='keyword'>Path / Resolution Scope</span> section describes mappings for individual files and
+	directories.</q></p>
+<p><q>If nothing is specified in this section, all the SQL files in your project use the project mapping.</q></p>
+<p><q>The mappings specified explicitly are shown in black. The mappings inherited from a higher level (unless you close
+	the dialog) are shown in gray italic.</q></p>
+<hr />
+
+<p><q>For Example, you have two data sources, one for your production database and the other one - for your test
+	database. The tables in both databases have the same names but slightly different structures. And you keep the SQL
+	scripts for your production and test databases separately, in two different folders.</q></p>
+<p><q>In such a situation, you'd map the folder with the production scripts onto the production data source, and the
+	folder with the test scripts onto the test data source.</q></p>
+<p><q>The other possibility would be to use the project mapping for your production data source and specify the mapping
+	for the test scripts folder separately, or vice versa.</q></p>
+
+</body>
+</html>

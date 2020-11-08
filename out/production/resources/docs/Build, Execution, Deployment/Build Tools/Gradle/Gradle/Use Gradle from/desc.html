@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Use this list to configure a Gradle version for your project.</q></p>
+<p><q>You can select one of the following options:</q></p>
+<ul>
+	<li>'gradle-wrapper.properties' file:
+		this is a recommended default option that uses <a
+				href='https://docs.gradle.org/current/userguide/gradle_wrapper.html'>Gradle wrapper</a>.
+		<p>In this case you delegate the update of Gradle versions to Gradle and get an automatic Gradle download for
+			the build. This option also lets you build with a precise Gradle version. The Gradle version is saved in the
+			<span class='filepath'>gradle-wrapper.properties</span> file in the <span class='filepath'>gradle</span>
+			directory of your project and helps you eliminate any Gradle version problems.</p></li>
+	<li>'wrapper' task in Gradle build script:
+		select this option to configure a Gradle wrapper according to the <code>wrapper</code> task configuration. It
+		might be convenient if you prefer to control which Gradle version to use in the project.
+		<p>If you used the default Gradle wrapper option and then switched to the Gradle <code>wrapper</code> task
+			configuration, changes you made in the task automatically update during the project import.</p></li>
+	<li>Specified location:
+		select this option if you don't want to use the Gradle wrapper and prefer to manually download and use a
+		specific Gradle version instead. Specify the location of your Gradle installation.
+	</li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Use this list to choose the strategy to synchronize your local repository with the remote storage. The selected
+	method will be used when the <code>push</code> operation is rejected (if the <span class='composite'>Auto-updated if push of the current branch was rejected</span>
+	option is enabled), or when you invoke the <span class='keyword'>Update Project</span> operation. The following
+	options are available:</q></p>
+<ul>
+	<li>Merge:
+		select this option to perform <a href='http://schacon.github.io/git/git-merge.html'>merge</a> during the update.
+		This is equivalent to running <code>git fetch</code> and then <code>git merge</code>, or <code>git pull
+			--no-rebase</code>.
+	</li>
+	<li>Rebase:
+		select this option to perform <a href='http://schacon.github.io/git/git-rebase.html'>rebase</a> during the
+		update. This is equivalent to running <code>git fetch</code> and then <code>git rebase</code>, or <code>git pull
+			--rebase</code> (all local commits will be put on top of the updated upstream head).
+	</li>
+</ul>
+
+</body>
+</html>

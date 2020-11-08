@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>
+	Select this checkbox to have IntelliJ IDEA discern separate words within CamelHump names. Words within a name should
+	start with a capital letter or an underscore. This option impacts some editor actions, for example:</q></p>
+<ul>
+	<li><span class='feature'>Caret Move</span><kbd>Ctrl+Right</kbd>/<kbd>Ctrl+Left</kbd></li>
+	<li><span class='feature'>Caret Move with Selection</span><kbd>Ctrl+Shift+Right</kbd>/<kbd>Ctrl+Shift+Left</kbd>
+	</li>
+	<li><span class='feature'>Select Word at Caret</span><kbd>Ctrl+W</kbd></li>
+	<li><span class='feature'>Delete to Word Start/End</span> (<kbd>Ctrl+Backspace</kbd> and <kbd>Ctrl+Delete</kbd>
+		respectively)
+	</li>
+	<li><span class='feature'>Double-clicking</span> (if <span class='composite'>Honor "CamelHumps" word settings when selecting using double click</span>
+		is enabled).
+	</li>
+</ul>
+<p><q>IntelliJ IDEA also provides similar actions that work in a mode opposite to the one selected in the <span
+		class='composite'>Use 'CamelHumps' words</span> setting:</q></p>
+<ul>
+	<li><span class='feature'>Move Caret to Previous Word in Different "CamelHumps" mode</span></li>
+	<li><span class='feature'>Move Caret to Previous Word with Selection in Different "CamelHumps" mode</span></li>
+	<li><span class='feature'>Move Caret to Next Word in Different "CamelHumps" mode</span></li>
+	<li><span class='feature'>Move Caret to Next Word with Selection in Different "CamelHumps" mode</span></li>
+	<li><span class='feature'>Delete to Word End in Different "CamelHumps" mode</span></li>
+	<li><span class='feature'>Delete to Word Start in Different "CamelHumps" mode</span></li>
+</ul>
+<p><q>For example, If <span class='composite'>Use 'CamelHumps' words</span> is <span class='feature'>enabled</span>, the
+	action <span class='feature'>Move Caret to Next Word in Different "CamelHumps" mode</span> moves the caret to the
+	end of word regardless of uppercase characters in this word; if <span
+			class='composite'>Use 'CamelHumps' words</span> is <span class='feature'>disabled</span>, then the caret
+	moves to the next CamelHump within this word.</q></p>
+<p><q>These actions have no default keyboard shortcuts, and are not included in the menus but you can invoke them from
+	<span class='keyword'>Go to Action</span> <kbd>Ctrl+Shift+A</kbd>:</q></p>
+<img src="./Use 'CamelHumps' words.png" alt='' />
+<p><q>You can bind them with the shortcuts of your choice as described in the section <a
+		href='https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html'>Configuring keyboard
+	shortcuts</a>.</q></p>
+
+</body>
+</html>
