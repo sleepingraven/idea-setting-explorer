@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>Specify the directory of your source root when you reimport a project.</q></p>
+<p><q>You can select one of the following options:</q></p>
+<ul>
+	<li>Don't detect:
+		This option lets you skip the detection process.
+	</li>
+	<li>Detect automatically:
+		This is a default option. When you select this option, IntelliJ IDEA automatically detects the location of the
+		generated sources. IntelliJ IDEA also detects which directory to mark as a source root. However, IntelliJ IDEA
+		searches for the generated sources only in <span class='filepath'>target/generated-sources</span> and <span
+				class='filepath'>target/generated-sources/*</span> directories.
+	</li>
+	<li>target/generated-sources:
+		This option enables you to mark the directory as source root manually.
+	</li>
+	<li>subdirectories of "target/generated-sources":
+		This option enables you to mark a subdirectory as a source root manually.
+	</li>
+</ul>
+
+</body>
+</html>

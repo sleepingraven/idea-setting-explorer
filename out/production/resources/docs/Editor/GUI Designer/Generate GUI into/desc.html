@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>This option specifies what kind of output the GUI Designer generates for the visual forms you create.</q></p>
+<p><q>(If your build actions are <a
+		href='https://www.jetbrains.com/help/idea/work-with-gradle-projects.html#delegate_build_actions'>delegated to
+	Gradle</a>, GUI Designer will not generate Java source code.)</q></p>
+<p><q>The available settings are:</q></p>
+<ul>
+	<li>Binary class files:
+		This is the default option. When selected, no Java source code is generated for GUI forms and components. When
+		the project compiles, IntelliJ IDEA creates the necessary compiled runtime classes.
+	</li>
+	<li>Java source files:
+		If this option is selected, the GUI Designer writes Java source code for the form and its components to the
+		source file of the class to which the form <a
+				href='https://www.jetbrains.com/help/idea/binding-the-form-and-components-to-code.html'>is bound</a>, on
+		compiling, running or debugging. During compilation, two blocks of code are added to the form's class:
+		<ul>
+			<li>A private method <code>$$$setupUI$$$()</code> that contains the GUI initializer code for the bound form
+				and its components.
+			</li>
+			<li>A call to the <code>$$$setupUI$$$()</code> method.</li>
+		</ul>
+		<p><q>(Do not change the generated method, or call it from any other code. If you manually modify GUI
+			initializer code, your UI will no longer be in sync with the <span class='filepath'>.form</span> file, and
+			the next compilation will overwrite your changes.)</q></p>
+	</li>
+</ul>
+
+</body>
+</html>

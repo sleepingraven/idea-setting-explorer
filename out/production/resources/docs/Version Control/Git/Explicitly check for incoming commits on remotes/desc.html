@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>If this option is enabled, IntelliJ IDEA will check if there are pending incoming commits that have not been
+	fetched to your local repository, and will mark such branches in the <span class='keyword'>Branches</span>
+	popup.</q></p>
+<p><q>Select how you want to IntelliJ IDEA to query the remote to check for incoming commits:</q></p>
+<ul>
+	<li>Auto:
+		IntelliJ IDEA will check for updates in the background if HTTP or Git protocol is used to access the remote. If
+		SSH is used, this check will not be performed so that external authentication applications don't popup
+		unexpectedly.
+	</li>
+	<li>Always:
+		IntelliJ IDEA will check for updates in the background even if SSH is used to access the remote.
+	</li>
+	<li>Never:
+		IntelliJ IDEA will not query the remote for incoming commits, and a warning will be displayed in the <span
+				class='keyword'>Branches</span> popup, allowing you to run the check manually.
+	</li>
+</ul>
+
+</body>
+</html>

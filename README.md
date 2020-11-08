@@ -1,7 +1,7 @@
 
-<div style="text-align: center;">
+<div style="text-align: center;" align='center'>
     <a href=[plugin-homepage]>
-        <img src="./src/main/resources/META-INF/pluginIcon.svg" width="280" alt="logo"/>
+        <img src="./src/main/resources/META-INF/pluginIcon.svg" width="320" alt="logo"/>
     </a>
 </div>
 
@@ -43,8 +43,11 @@ The main goal of this plugin is to provide guidance of configurations for develo
 There are two expression ways of the UI on this plugin:
 
 - Catalog Mode - Is used for previewing and searching the configurable.
+
   ![Catalog mode preview][file:app-preview.png]
+
 - View Mode - Is used for viewing documentations of the configurable.
+
   ![View mode preview][file:view-mode-preview.png]
 
 ## Compatibility
@@ -115,7 +118,7 @@ Matched characters of configurations will have a highlighted appearance.
   - README written
   - CHANGELOG written
   
-  Refer to [Change Log][gh:change-log] page for complete update log.
+Refer to [Change Log][gh:change-log] page for complete update log.
 
 ## Support
 

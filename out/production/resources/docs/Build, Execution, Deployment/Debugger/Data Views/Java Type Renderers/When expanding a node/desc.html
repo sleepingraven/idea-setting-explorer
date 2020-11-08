@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>This option determines how the contents of an object are displayed when it is expanded.</q></p>
+<ul>
+	<li>Use default renderer:
+		displays the node children as they would be displayed without this renderer. This is useful if you want to only
+		customize the way the object itself is displayed.
+	</li>
+	<li>Use following expression:
+		lets you use the return value of some expression for displaying the contents of a node, for example, <code>this.toArray()</code>.
+		The expression has to return an array of primitive or reference types. The elements of the returned array are
+		used to represent the node children.
+		<p>Test if a node can be expanded (optional):
+			adds an automatic check whether the node representing the object can be expanded. The check uses the
+			specified boolean expression, for example <code>!this.isEmpty()</code>. The expression is called on the
+			instance, and if it evaluates to <code>true</code>, the debugger makes the node expandable.</p></li>
+	<li>Use list of expressions: allows you to specify multiple expressions each providing its own representation of the
+		object's children. The <span class='composite'>On-demand</span> option disables their automatic evaluation and
+		only calculates the result when you select a specific expression.
+	</li>
+</ul>
+
+</body>
+</html>

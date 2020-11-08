@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Title</title>
+	<link rel='stylesheet' href='/utils/common-style.css' />
+</head>
+
+<body>
+
+<p><q>The page is available when the <span class='emphasis'>File Watchers</span> plugin is enabled. For more information
+	about configuring File Watchers, see <a href='https://www.jetbrains.com/help/idea/using-file-watchers.html'>File
+		watchers</a>. The <span class='emphasis'>File Watchers</span> plugin is not bundled with IntelliJ IDEA, but it
+	can be installed on the <span class='composite'>Settings/Preferences | Plugins</span> page as described in <a
+			href='https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_repo'>Installing plugins
+		from JetBrains repository</a>.</q></p>
+<p><q>A <span class='emphasis'>File Watcher</span> is a IntelliJ IDEA system that tracks changes to your files and runs
+	a third-party standalone application. IntelliJ IDEA provides predefined File Watcher templates for a number of such
+	standard popular third-party tools (<a href='http://en.wikipedia.org/wiki/Source-to-source_compiler'>compilers</a>,
+	compressors, prettifiers, and others).</q></p>
+<p><q>You can also configure a custom File Watcher to run any other third-party tool.</q></p>
+<p><q>File watchers have two dedicated <span class='emphasis'>code inspections</span>:</q></p>
+<ul>
+	<li>The <span class='emphasis'>File Watcher available</span> inspection is run in every file where a predefined File
+		Watcher is applicable. If the project has no relevant File Watcher configured, IntelliJ IDEA suggests to add
+		one.
+	</li>
+	<li>The <span class='emphasis'>File watcher problems</span> inspection is invoked by a running File Watcher and
+		highlights errors specific to it.
+	</li>
+</ul>
+<p><q>The page consists of a list of available File Watchers and a toolbar to manage this list.</q></p>
+<p><q>For each File Watcher, you can decide if it’s going to be available only in the current project (select <span
+		class='keyword'>Project</span> from the <span class='keyword'>Level</span>list) or for all projects (select
+	<span class='keyword'>Global</span>).</q></p>
+<p><q>To activate a <span class='emphasis'>File Watcher</span>, select the checkbox next to it. When a File Watcher is
+	enabled, it starts automatically as soon as a file of the selected type and in the selected scope is changed or
+	saved, see <a href='https://www.jetbrains.com/help/idea/using-file-watchers.html#ws_filewatcher_advanced_options'>Configuring
+		advanced options</a>. If an error occurs while a File Watcher is running, the File Watcher is automatically
+	disabled. To restore the status, enable the File Watcher manually.</q></p>
+<hr />
+
+<p><q>Use the <span class='keyword'>New Watcher</span> dialog to create a project File Watcher based on a predefined
+	IntelliJ IDEA File Watcher template or to edit an existing project File Watcher.</q></p>
+<p><q>Each template contains the settings that are optimal for the selected tool. So in most cases, all you need is
+	specify the path to the tool's executable.</q></p>
+<img src='./File%20Watchers.png' alt='' />
+<ul>
+	<li>Name:
+		In the <span class='keyword'>Name</span> field, type the name of the File Watcher. By default, IntelliJ IDEA
+		suggests the name of the selected predefined template.
+	</li>
+	<li>Files to Watch:
+		<ul>
+			<li>File type:
+				Use this list to specify the expected type of input files. The File Watcher will consider only files of
+				this type as subject for analyzing and processing. File types are recognised based on <a
+						href='https://www.jetbrains.com/help/idea/creating-and-registering-file-types.html#register-new-association'>associations
+					between file types and file extensions</a>.
+				<p>(By default, the field shows the file type in accordance with the chosen predefined template.)</p>
+			</li>
+			<li>Scope:
+				Use this list to define the range of files the File Watcher can be applied to.
+				<p>Changes in these files will invoke the File Watcher either immediately or upon save or frame
+					deactivation, depending on the status of the <span class='composite'>Auto-save edited files to trigger the watcher</span>
+					checkbox.</p>
+				<p>Select one of the predefined scopes from the list. For a project-level File Watcher, you can also
+					click <span class='widget'>the Browse button</span> to configure a custom scope in the <span
+							class='keyword'>Scopes</span> dialog that opens.</p>
+				<ul>
+					<li>All Places:
+						all the scopes listed below.
+					</li>
+					<li>Project Files:
+						all the files within the project content roots (see <a
+								href='https://www.jetbrains.com/help/idea/content-roots.html'>Content roots</a>).
+					</li>
+					<li>Project Production Files:
+						all the files within the project content roots excluding test sources.
+					</li>
+					<li>Project Test Files:
+						all the files within the project test source roots.
+					</li>
+					<li>Scratches and Consoles:
+						all the files from the <span class='keyword'>Scratches and Consoles</span> directory located in
+						the <span class='keyword'>Project</span> tool window.
+					</li>
+					<li>Open Files:
+						all the files that are currently opened in the editor.
+					</li>
+					<li>Current File:
+						the file opened in the active editor tab.
+					</li>
+				</ul>
+				<p><span class='keyword'>VCS Scopes</span>: these scopes are only available if your <a
+						href='https://www.jetbrains.com/help/idea/enabling-version-control.html#associate_project_with_VCS'>project
+					is under version control</a>.</p>
+				<ul>
+					<li>All Changed Files:
+						all changed files, that is, all files associated with all existing changelists.
+					</li>
+					<li>Default Changelist:
+						all the files associated with the changelist <code>Default</code>.
+					</li>
+				</ul>
+				<p>Alternatively, click <span class='widget'>the Browse button</span> and configure a <span
+						class='emphasis'>custom scope</span> in the <span class='emphasis'>Scopes</span> dialog that
+					opens.</p>
+				<p>(See <a href='https://www.jetbrains.com/help/idea/configuring-scopes-and-file-colors.html'>Scopes and
+					file colors</a> for details.)</p>
+			</li>
+			<li>Track only root files:
+				A <span class='emphasis'>root file</span> is a file that is not included (for example via
+				<code>import</code>) in any other file <span class='emphasis'>within the specified scope</span>.
+				<ul>
+					<li>When this checkbox is selected, the File Watcher runs only against the <span class='emphasis'>root files</span>.
+					</li>
+					<li>When the checkbox is cleared, the File Watcher runs against the file from which it is invoked
+						and against all the files in which this file is included recursively within the specified scope.
+					</li>
+				</ul>
+				<p>Note that the <span class='keyword'>Scope</span> setting overrides the <span class='composite'>Track only root files</span>
+					checkbox setting: if a dependency is outside the specified scope, the File Watcher is not applied to
+					it.</p>
+				<p><span class='emphasis'>Example</span></p>
+				<p>Suppose you have two files <span class='filepath'>root.scss</span> and <span class='filepath'>another.scss</span>
+					where <span class='filepath'>root.scss</span> imports <span class='filepath'>another.scss</span>.
+					With the <span class='composite'>Track only root files</span> checkbox selected, editing <span
+							class='filepath'>another.scss</span> invokes the File Watcher only on <span
+							class='filepath'>root.scss</span>. Otherwise, if the checkbox is cleared, the File Watcher
+					processes both of these files.</p>
+				<p>(This option is available only for <span class='emphasis'>Babel</span>, <span class='emphasis'>Closure Compiler</span>,
+					<span class='emphasis'>Jade</span>, <span class='emphasis'>Less</span>, <span class='emphasis'>Sass/SCSS</span>,
+					<span class='emphasis'>Stylus</span>, and <span class='emphasis'>UglifyJS</span>.)</p>
+			</li>
+		</ul>
+	</li>
+	<li>Tool to run on changes:
+		In this area, configure interaction with the tool: specify the executable file to use, the arguments to pass to
+		it, and where IntelliJ IDEA should look for the tool's output.
+		<ul>
+			<li>Program:
+				<p>In this field, specify the path to the tool's executable file (<span class='filepath'>.com</span>,
+					<span class='filepath'>.exe</span>, <span class='filepath'>.cmd</span>, <span
+							class='filepath'>.bat</span>, or other depending on the specific tool.)</p>
+				(
+				<ul>
+					<li>To use the program filename instead of filename path, add the path to its folder to the system
+						environment variable PATH.
+					</li>
+					<li>On Windows, you can skip the <span class='filepath'>.com</span>, <span
+							class='filepath'>.exe</span>, <span class='filepath'>.cmd</span> or <span class='filepath'>.bat</span>
+						extension.
+					</li>
+					<li>To use a <span class='filepath'>jar</span> archive, specify the absolute path to it.
+						Alternatively, to use a relative path, add its parent folder to the <a
+								href='https://www.jetbrains.com/help/idea/absolute-path-variables.html'>IntelliJ IDEA
+							path variables</a> on the <span
+								class='keyword'>Appearance & Behavior | Path Variables</span> page of the <span
+								class='keyword'>Settings/Preferences</span> <kbd>Ctrl+Alt+S</kbd>.
+					</li>
+				</ul>
+				)
+			</li>
+			<li>Arguments:
+				In this field, define the arguments to pass to the tool and thus influence its behaviour.
+				<p>Arguments are usually specified using macros, for example, <code>$FileName$</code> or <code>$FileNameWithoutExtension$</code>,
+					that will be replaced with actual file names.</p>
+				<p>Type the macros manually or click <span class='widget'>the Insert Macros icon</span> and select the
+					relevant pattern fom the list in the <span class='keyword'>Macros</span> dialog that opens.</p>
+				(
+				<p>When specifying the arguments, follow these rules:</p>
+				<ul>
+					<li>Use spaces as separators.</li>
+					<li>If an argument contains spaces, enclose them or the entire argument in double quotes: <code>some"
+						"arg</code> or <code>"some arg"</code>.
+					</li>
+					<li>If an argument contains double quotes, use backslashes to escape them: <code>-Dmy.prop=\"quoted_value"\</code>.
+					</li>
+				</ul>
+				)
+			</li>
+			<li>Output paths to refresh:
+				In this field, tell IntelliJ IDEA where it should search for the tool's output: the resulting source
+				code, source maps, dependencies, or the file itself. The location of the output is tool-specific.
+				<p>Output paths are usually specified using macros. You can type them manually or click <span
+						class='widget'>the Insert Macros icon</span> and select the relevant one from the list in the
+					dialog that opens.</p>
+				<p>Note, that changing the value in the <span class='composite'>Output paths to refresh</span> field
+					does not make the tool store its output in another place. If you still need to do that, specify the
+					desired custom output location in the <span class='keyword'>Arguments</span> field: type the output
+					paths with colons as separators and use macros.</p>
+			</li>
+		</ul>
+	</li>
+	<li>Working Directory and Environment Variables:
+		<ul>
+			<li>Working directory:
+				In this field, specify the directory to which the tool will be applied. Because the tool is always
+				invoked in the context of a file, the default working directory is the directory of the current file.
+				The default working directory is specified in all predefined templates through a <code>$FileDir$</code>
+				macros. To specify a custom working directory, type the path to it in the field, or click <span
+						class='widget'>the Browse icon</span> and select the directory in the <span class='keyword'>Select Path</span>
+				dialog, or click <span class='widget'>the Insert Macros icon</span> and select the desired macro from
+				the list in the <span class='keyword'>Macros</span> dialog.
+				<p>(If you leave the <span class='composite'>Working Directory</span> field empty, IntelliJ IDEA uses
+					the directory of the file where the File Watcher is invoked.)</p>
+			</li>
+			<li>Environment variables:
+				In this field, specify the environment variables that the tool requires but that are not specified at
+				the operating system level.
+			</li>
+		</ul>
+	</li>
+	<li>Advanced Options:
+		<ul>
+			<li>Auto-save edited files to trigger the watcher:
+				<ul>
+					<li>When this checkbox is selected, IntelliJ IDEA immediately saves a file as soon as you edit it so
+						the File Watcher wakes up immediately.
+					</li>
+					<li>When the checkbox is cleared, the File Watcher starts upon save (<span class='keyword'>File | Save All</span>)
+						or when you move the focus from IntelliJ IDEA (on frame deactivation).
+					</li>
+				</ul>
+			</li>
+			<li>Trigger the watcher on external changes:
+				<ul>
+					<li>When this checkbox is selected, the File Watcher wakes up on any changes to a file from its
+						scope, including changes made outside IntelliJ IDEA or the changes after you checkout a branch
+						in you version control system.
+					</li>
+					<li>When the checkbox is cleared, the File Watcher starts only when a file from its scope is updated
+						from IntelliJ IDEA and ignores other changes, for example, changes received from your version
+						control system.
+					</li>
+				</ul>
+			</li>
+			<li>Trigger watcher regardless of syntax errors:
+				<ul>
+					<li>When the checkbox is selected, the File Watcher start regardless of the syntactical correctness
+						of a file. The File Watcher will start upon update, save, or frame deactivation, depending on
+						the status of the <span class='composite'>Auto-save edited files to trigger the watcher</span>
+						checkbox.
+					</li>
+					<li>When this checkbox is cleared, the File Watcher ignores all triggers in files that are
+						syntactically invalid and starts only in error-free files.
+					</li>
+				</ul>
+			</li>
+			<li>Create output file from stdout:
+				<ul>
+					<li>In most cases, this checkbox should be cleared because most tools write their output to the
+						relevant files directly.
+					</li>
+					<li>When this checkbox is selected, IntelliJ IDEA reads the native tool's output <code>standard
+						output stream (stdout)</code> and generates the resulting file from it. The name of the
+						generated file is taken from the <span class='composite'>Output paths to refresh</span> field.
+						If the field contains several names, the first one in the list is used.
+					</li>
+				</ul>
+			</li>
+			<li>Show console:
+				<p>From this list, select when you want the File Watcher to open the console.</p>
+				<ul>
+					<li>Always:
+						with this option, the console always opens after the tool execution is completed.
+					</li>
+					<li>On error:
+						with this option, the console opens after the tool execution only when the <code>Exit
+							code</code> is different from <code>0</code>.
+					</li>
+					<li>Never:
+						choose this option to suppress opening the console at all.
+					</li>
+				</ul>
+			</li>
+			<li>Output Filters:
+				<p>In this field, specify the output filters associated with the tool. Based on these filters, absolute
+					file paths and line numbers in the tool's output are converted into hyperlinks. Clicking those links
+					opens the corresponding files in the editor.</p>
+				<p>For example, to get useful error messages displayed, type <code>$FILE_PATH$:$LINE$ $MESSAGE$</code>
+				</p>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+</body>
+</html>
