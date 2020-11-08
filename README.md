@@ -16,6 +16,7 @@
 <!--
 [![Build](https://github.com/JetBrains/intellij-platform-plugin-template/workflows/Build/badge.svg)][gh:build]
 -->
+
 [![GitHub](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
 
   - [Introduction](#introduction)
