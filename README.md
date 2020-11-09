@@ -1,19 +1,22 @@
 
-<div style='text-align: center;' align='center'>
-    <a href='https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer'>
-        <img src="./src/main/resources/META-INF/pluginIcon.svg" width="320" alt="Logo"/>
-    </a>
-</div>
-
-<!--
-<div style="text-align: center; width: auto;">
+<!-- without zoom
+<div style="text-align: center; width: 320; padding: 0; margin: 0;">
 
 [![Plugin Icon][file:plugin-icon.svg]][plugin-homepage]
 
 </div>
 -->
 
-<h1 align="center">Idea Setting Explorer</h1>
+<div style='text-align: center;' align='center'>
+    <a href='https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer'>
+        <img src="./src/main/resources/META-INF/pluginIcon.svg" width="320" alt="Logo"/>
+    </a>
+    <h1>Idea Setting Explorer</h1>
+    
+[![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
+[![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
+
+</div>
 
 <!--
 [![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
@@ -28,13 +31,6 @@
 [![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer?include_prereleases)]()
 [![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer)]()
 -->
-
-<div align="center">
-
-[![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
-[![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
-
-</div>
 
 <br />
 
