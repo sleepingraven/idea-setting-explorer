@@ -81,7 +81,7 @@ IntelliJ IDEA for versions after 2020.2.
 
 - Using IDE built-in plugin system:
 
-  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for `Idea Setting Explorer`</kbd> >
+  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Idea Setting Explorer"</kbd> >
   <kbd>Install Plugin</kbd>
 
 - Manually:
