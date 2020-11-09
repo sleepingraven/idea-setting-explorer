@@ -1,6 +1,6 @@
 
-<div style="text-align: center;" align='center'>
-    <a href=[plugin-homepage]>
+<div style='text-align: center;' align='center'>
+    <a href='https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer'>
         <img src="./src/main/resources/META-INF/pluginIcon.svg" width="320" alt="logo"/>
     </a>
 </div>
@@ -14,9 +14,21 @@
 -->
 
 <!--
-[![Build](https://github.com/JetBrains/intellij-platform-plugin-template/workflows/Build/badge.svg)][gh:build]
+[![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
+[![Rating](https://img.shields.io/jetbrains/plugin/r/rating/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
+[![Rating](https://img.shields.io/jetbrains/plugin/r/stars/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
+[![Stars](https://badgen.net/github/stars/sleepingraven/idea-setting-explorer/)]()
+[![Top Languages](https://img.shields.io/github/languages/top/sleepingraven/idea-setting-explorer)]()
+[![Languages](https://img.shields.io/github/languages/count/sleepingraven/idea-setting-explorer)]()
+[![Search Counter](https://img.shields.io/github/search/sleepingraven/idea-setting-explorer/hh)]()
+[![Code Size](https://img.shields.io/github/languages/code-size/sleepingraven/idea-setting-explorer)]()
+[![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer?include_prereleases)]()
+[![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer)]()
 -->
-[![GitHub](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
+
+[![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
+[![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
 
   - [Introduction](#introduction)
   - [Overview](#overview)
@@ -35,7 +47,14 @@
 <!-- Plugin description -->
 With **Idea Setting Explorer** you can search the configurations within your **IntelliJ IDEA** conveniently and view documentations about them.
 
-The main goal of this plugin is to provide guidance of configurations for developers and facilitate the search of them by listing operation steps, describing with pictures, linking to the proper documentation pages, and marking them with colored tags, witch displays in lightweight, concise, fast and immersive popups.
+The main goal of this plugin is to provide guidance of configurations for developers and facilitate the search of them by:
+
+- listing operation steps,
+- describing with pictures,
+- linking to the proper documentation pages,
+- marking them with colored tags,
+
+witch displays in lightweight, concise, fast and immersive popups.
 <!-- Plugin description end -->
 
 ## Overview
@@ -145,10 +164,11 @@ You can support this project through any of the following points:
 [file:search.png]: .github/readme/search.png
 
 [gh:change-log]: https://github.com/sleepingraven/idea-setting-explorer/blob/master/CHANGELOG.md
+[gh:build]: https://github.com/sleepingraven/idea-setting-explorer/actions?query=workflow%3ABuild
 [gh:license]: https://github.com/sleepingraven/idea-setting-explorer/blob/master/LICENSE
 
-[plugin-homepage]: https://www.jetbrains.com/help/idea/discover-intellij-idea.html
-[plugin-reviews]: https://www.jetbrains.com/help/idea/discover-intellij-idea.html
+[plugin-homepage]: https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer/
+[plugin-reviews]: https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer/reviews
 
 [docs:idea]: https://www.jetbrains.com/help/idea/discover-intellij-idea.html
 [docs:idea-settings-preferences]: https://www.jetbrains.com/help/idea/settings-preferences-dialog.html
