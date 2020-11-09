@@ -3,7 +3,7 @@ import org.jetbrains.changelog.closure
 import org.jetbrains.changelog.markdownToHTML
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-//import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+// import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 
 plugins {
     id("jacoco")
