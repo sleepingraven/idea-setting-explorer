@@ -1,7 +1,7 @@
 
 <div style='text-align: center;' align='center'>
     <a href='https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer'>
-        <img src="./src/main/resources/META-INF/pluginIcon.svg" width="320" alt="logo"/>
+        <img src="./src/main/resources/META-INF/pluginIcon.svg" width="320" alt="Logo"/>
     </a>
 </div>
 
@@ -12,6 +12,8 @@
 
 </div>
 -->
+
+<h1 align="center">Idea Setting Explorer</h1>
 
 <!--
 [![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
@@ -27,8 +29,14 @@
 [![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer)]()
 -->
 
+<div align="center">
+
 [![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
 [![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
+
+</div>
+
+<br />
 
   - [Introduction](#introduction)
   - [Overview](#overview)
@@ -71,7 +79,7 @@ There are two expression ways of the UI on this plugin:
 
 ## Compatibility
 
-IntelliJ IDEA for versions after 2020.2
+IntelliJ IDEA for versions after 2020.2.
 
 ## Installation
 
