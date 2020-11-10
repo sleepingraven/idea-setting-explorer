@@ -42,7 +42,7 @@
     - [Shortcuts](#shortcuts)
     - [Tags](#tags)
     - [Search](#search)
-  - [Change Log](#change-log)
+  - [Change Notes](#change-notes)
   - [Support](#support)
   - [Useful links](#useful-links)
 
@@ -85,7 +85,7 @@ IntelliJ IDEA for versions after 2020.2.
 
 - Manually:
 
-  Download the [latest release](https://github.com/%REPOSITORY%/releases/latest) and install it manually using
+  Download the [latest release][gh:latest-release] and install it manually using
   <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 ## Usage
@@ -166,6 +166,7 @@ You can support this project through any of the following points:
 [file:tags.png]: .github/readme/tags.png
 [file:search.png]: .github/readme/search.png
 
+[gh:latest-release]: https://github.com/idea-setting-explorer/releases/latest
 [gh:change-log]: https://github.com/sleepingraven/idea-setting-explorer/blob/master/CHANGELOG.md
 [gh:build]: https://github.com/sleepingraven/idea-setting-explorer/actions?query=workflow%3ABuild
 [gh:license]: https://github.com/sleepingraven/idea-setting-explorer/blob/master/LICENSE
