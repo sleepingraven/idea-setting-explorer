@@ -2,7 +2,10 @@
 
 ## [Unreleased]
 ### Changed
-- Description changed
+- Plugin Description changed
+
+### Fixed
+- Plugin Change Note fixed
 
 ## [0.0.1] - 2020-11-7
 ### Added

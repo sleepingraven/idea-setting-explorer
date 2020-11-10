@@ -80,7 +80,6 @@ IntelliJ IDEA for versions after 2020.2.
 ## Installation
 
 - Using IDE built-in plugin system:
-
   <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Idea Setting Explorer"</kbd> >
   <kbd>Install Plugin</kbd>
 
@@ -130,7 +129,7 @@ Matched characters of configurations will have a highlighted appearance.
 
 ![Search][file:search.png]
 
-## Change Log
+## Change Notes
 
 [0.0.1] - 2020-11-7
 - Added

@@ -77,12 +77,13 @@ public class AppPersistence extends StorableState<AppPersistence> implements Set
         try {
             switch (version) {
                 case "0.0.1":
+                case "0.0.2":
                 default:
                     AppSourceData sourceData = new AppSourceData();
                     configMap = sourceData.getConfigMap();
                     contentMap = sourceData.getContentMap();
             }
-            version = "0.0.1";
+            version = "0.0.2";
             refresh = false;
         } catch (JDOMException | IOException e) {
             e.printStackTrace();

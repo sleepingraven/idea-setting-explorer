@@ -1,7 +1,7 @@
 <idea-plugin>
 	<id>com.github.sleepingraven.idea-setting-explorer</id>
 	<name>Idea Setting Explorer</name>
-	<version>0.0.1</version>
+	<version></version>
 	<vendor email="spgrvn@gmail.com" url="https://github.com/sleepingraven/">sleepingraven</vendor>
 
 	<!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
