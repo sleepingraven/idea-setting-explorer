@@ -13,13 +13,13 @@
     </a>
     <h1>Idea Setting Explorer</h1>
     
+[![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
 [![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
 [![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
 
 </div>
 
 <!--
-[![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
 [![Rating](https://img.shields.io/jetbrains/plugin/r/rating/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
 [![Rating](https://img.shields.io/jetbrains/plugin/r/stars/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
