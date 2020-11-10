@@ -6,7 +6,7 @@ name: Template Cleanup
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
 
@@ -14,7 +14,7 @@ jobs:
   template-cleanup:
     name: Template Cleanup
     runs-on: ubuntu-latest
-    if: github.event.repository.name != 'intellij-platform-plugin-template' && false
+    if: github.event.repository.name != 'intellij-platform-plugin-template'
     steps:
 
       # Check out current repository
@@ -33,28 +33,7 @@ jobs:
           ACTOR=$(echo $GITHUB_ACTOR | tr '[:upper:]' '[:lower:]')
           GROUP="com.github.$ACTOR.$SAFE_NAME"
 
-          # Replace placeholders in the template-cleanup files
-          sed -i "s/%NAME%/$NAME/g" .github/template-cleanup/*
-          sed -i "s/%REPOSITORY%/${GITHUB_REPOSITORY/\//\\/}/g" .github/template-cleanup/*
-          sed -i "s/%GROUP%/$GROUP/g" .github/template-cleanup/*
-
-          # Replace template package name in project files with $GROUP
-          find src -type f -exec sed -i "s/org.jetbrains.plugins.template/$GROUP/g" {} +
-          find src -type f -exec sed -i "s/Template/$NAME/g" {} +
-          find src -type f -exec sed -i "s/JetBrains/$ACTOR/g" {} +
-
-          # Remove lines marked with #REMOVE-ON-CLEANUP#
-          find . -type f -exec sed -i '/#REMOVE-ON-CLEANUP#/d' {} +
-
-          # Move content
-          mkdir -p src/main/kotlin/${GROUP//.//}
-          cp -R .github/template-cleanup/* .
-          cp -R src/main/kotlin/org/jetbrains/plugins/template/* src/main/kotlin/${GROUP//.//}/
-
           # Cleanup
-          rm -rf .github/readme
-          rm -rf .github/template-cleanup
-          rm -rf src/main/kotlin/org
           rm .github/workflows/template-cleanup.yml
 
       # Commit modified files
@@ -69,4 +48,5 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
+          branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
