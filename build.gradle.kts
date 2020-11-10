@@ -195,7 +195,8 @@ sourceSets {
     main {
         java {
             srcDirs("/src/main/java")
-//            exclude("kotlin", "demo")
+            // exclude unused sources
+            exclude("kotlin", "demo")
         }
         resources {
             srcDirs("/src/main/resources")
