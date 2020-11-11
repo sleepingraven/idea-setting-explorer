@@ -134,7 +134,8 @@ tasks {
         pluginDescription(
             closure {
                 (
-                    "<p><b><a href='https://github.com/sleepingraven/idea-setting-explorer'>GitHub</a> | " +
+                    "<p><strong>Setting Navigation for IntelliJ IDEA.</strong></p>" +
+                        "<p><b><a href='https://github.com/sleepingraven/idea-setting-explorer'>GitHub</a> | " +
                         "<a href='https://github.com/sleepingraven/idea-setting-explorer/issues'>Issues</a></b></p>" +
                         File("./README.md").readText().lines().run {
                             val start = "<!-- Plugin description -->"
