@@ -1,18 +1,15 @@
 
-<!-- without zoom
-<div style="text-align: center; width: 320; padding: 0; margin: 0;">
-
-[![Plugin Icon][file:plugin-icon.svg]][plugin-homepage]
-
-</div>
--->
-
 <div style='text-align: center;' align='center'>
+    <!--
     <a href='https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer'>
         <img src="./src/main/resources/META-INF/pluginIcon.svg" width="320" alt="Logo"/>
     </a>
-    <h1>Idea Setting Explorer</h1>
-    <p>Setting Navigation for IntelliJ IDEA.</p>
+    -->
+
+[![Logo][file:plugin-icon.svg]][plugin-homepage]
+
+<h1>Idea Setting Explorer</h1>
+<p>Setting Navigation for IntelliJ IDEA.</p>
 
 [![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
 [![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
