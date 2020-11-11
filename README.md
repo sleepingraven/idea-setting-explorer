@@ -6,6 +6,7 @@
     </a>
     -->
 
+[![Logo][file:logo.svg]][plugin-homepage]
 [![Logo][file:plugin-icon.svg]][plugin-homepage]
 
 <h1>Idea Setting Explorer</h1>
@@ -157,6 +158,7 @@ You can support this project through any of the following points:
 - [IntelliJ IDEA Documentation of Settings/Preferences][docs:idea-settings-preferences]
 - [IntelliJ IDEA Users Forum][jb:users-community]
 
+[file:logo.svg]: .github/readme/Logo.svg
 [file:plugin-icon.svg]: .github/readme/pluginIcon.svg
 [file:app-preview.png]: .github/readme/app-preview.png
 [file:view-mode-preview.png]: .github/readme/view-mode-preview.png
