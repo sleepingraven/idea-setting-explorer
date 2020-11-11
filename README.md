@@ -130,7 +130,7 @@ Matched characters of configurations will have a highlighted appearance.
 
 ## Change Note
 
-> ### [v0.0.3](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.0.3) (2020/11/11)
+> ### [v0.0.3](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.0.3) (2020/11/12)
 > - Fixed
 >   - Plugin Description fixed
 
