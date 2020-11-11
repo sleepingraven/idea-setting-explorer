@@ -145,7 +145,7 @@ tasks {
                             }
                             subList(indexOf(start) + 1, indexOf(end))
                         }.joinToString("\n").run { markdownToHTML(this) }
-                    ).replace(Regex("[^:]</p>"), "</p><br />")
+                    ).replace(Regex("(?<!:)</p>"), "</p><br />")
             }
         )
 

@@ -130,11 +130,9 @@ Matched characters of configurations will have a highlighted appearance.
 
 ## Change Note
 
-> ### [v0.0.2](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.0.2) (2020/11/11)
-> - Changed
->   - Plugin Description changed
+> ### [v0.0.3](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.0.3) (2020/11/11)
 > - Fixed
->   - Plugin Change Note fixed
+>   - Plugin Description fixed
 
 Refer to [Change Log][gh:change-log] page for the complete update log.
 
