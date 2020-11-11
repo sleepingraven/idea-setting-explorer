@@ -12,7 +12,8 @@
         <img src="./src/main/resources/META-INF/pluginIcon.svg" width="320" alt="Logo"/>
     </a>
     <h1>Idea Setting Explorer</h1>
-    
+    <p>Setting Navigation for IntelliJ IDEA.</p>
+
 [![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
 [![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
 [![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
@@ -140,7 +141,7 @@ Matched characters of configurations will have a highlighted appearance.
   - README written
   - CHANGELOG written
 
-Refer to [Change Log][gh:change-log] page for complete update log.
+Refer to [Change Log][gh:change-log] page for the complete update log.
 
 ## Support
 
