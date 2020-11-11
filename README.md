@@ -13,7 +13,7 @@
 
 [![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
 [![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
-[![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer)]()
+[![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer)][gh:latest-release]
 [![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
 
 </div>
@@ -27,6 +27,7 @@
 [![Languages](https://img.shields.io/github/languages/count/sleepingraven/idea-setting-explorer)]()
 [![Search Counter](https://img.shields.io/github/search/sleepingraven/idea-setting-explorer/hh)]()
 [![Code Size](https://img.shields.io/github/languages/code-size/sleepingraven/idea-setting-explorer)]()
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/sleepingraven/idea-setting-explorer)][gh:latest-release]
 [![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer?include_prereleases)]()
 -->
 
