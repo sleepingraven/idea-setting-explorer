@@ -1,10 +1,10 @@
 
 <div style='text-align: center;' align='center'>
-    <!--
-    <a href='https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer'>
-        <img src="./src/main/resources/META-INF/pluginIcon.svg" width="320" alt="Logo"/>
-    </a>
-    -->
+<!--
+<a href='https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer'>
+    <img src="./src/main/resources/META-INF/pluginIcon.svg" width="320" alt="Logo"/>
+</a>
+-->
 
 [![Logo][file:logo.svg]][plugin-homepage]
 
@@ -13,6 +13,7 @@
 
 [![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
 [![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
+[![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer)]()
 [![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
 
 </div>
@@ -27,7 +28,6 @@
 [![Search Counter](https://img.shields.io/github/search/sleepingraven/idea-setting-explorer/hh)]()
 [![Code Size](https://img.shields.io/github/languages/code-size/sleepingraven/idea-setting-explorer)]()
 [![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer?include_prereleases)]()
-[![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer)]()
 -->
 
 <br />
@@ -40,7 +40,7 @@
     - [Shortcuts](#shortcuts)
     - [Tags](#tags)
     - [Search](#search)
-  - [Change Notes](#change-notes)
+  - [Change Note](#change-note)
   - [Support](#support)
   - [Useful links](#useful-links)
 
@@ -127,16 +127,13 @@ Matched characters of configurations will have a highlighted appearance.
 
 ![Search][file:search.png]
 
-## Change Notes
+## Change Note
 
-[0.0.1] - 2020-11-7
-- Added
-  - Initial project scaffold
-  - UI built
-  - Configurations added
-  - Documentations added
-  - README written
-  - CHANGELOG written
+> ### [v0.0.2](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.0.2) (2020/11/11)
+> - Changed
+>   - Plugin Description changed
+> - Fixed
+>   - Plugin Change Note fixed
 
 Refer to [Change Log][gh:change-log] page for the complete update log.
 
@@ -146,7 +143,7 @@ You can support this project through any of the following points:
 
 - Star this project
 - Share this plugin with your friends
-- Review this plugin on [Reviews][plugin-reviews] page
+- Rating this plugin on [Reviews][plugin-reviews] page
 - Make pull requests
 - Report bugs
 - Tell us your ideas and suggestions
@@ -165,7 +162,7 @@ You can support this project through any of the following points:
 [file:tags.png]: .github/readme/tags.png
 [file:search.png]: .github/readme/search.png
 
-[gh:latest-release]: https://github.com/idea-setting-explorer/releases/latest
+[gh:latest-release]: https://github.com/sleepingraven/idea-setting-explorer/releases/latest
 [gh:change-log]: https://github.com/sleepingraven/idea-setting-explorer/blob/master/CHANGELOG.md
 [gh:build]: https://github.com/sleepingraven/idea-setting-explorer/actions?query=workflow%3ABuild
 [gh:license]: https://github.com/sleepingraven/idea-setting-explorer/blob/master/LICENSE

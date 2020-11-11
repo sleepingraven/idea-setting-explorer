@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+
+## [0.0.2] - 2020-11-11
 ### Changed
 - Plugin Description changed
 
