@@ -7,7 +7,6 @@
     -->
 
 [![Logo][file:logo.svg]][plugin-homepage]
-[![Logo][file:plugin-icon.svg]][plugin-homepage]
 
 <h1>Idea Setting Explorer</h1>
 <p>Setting Navigation for IntelliJ IDEA.</p>
