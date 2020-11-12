@@ -74,7 +74,7 @@ There are two expression ways of the UI on this plugin:
 
 ## Compatibility
 
-IntelliJ IDEA for versions after 2020.2.
+IntelliJ IDEA for version 2020.2 or higher.
 
 ## Installation
 
@@ -136,7 +136,7 @@ Additionally, matches are not case-sensitive.
 > - Fixed
 >   - Plugin Description fixed
 
-Refer to [Change Log][gh:change-log] page for the complete update log.
+Refer to [Changelog][gh:change-log] page for the complete update log.
 
 ## Support
 
@@ -164,9 +164,9 @@ You can support this project through any of the following points:
 [file:search.png]: .github/readme/search.png
 
 [gh:latest-release]: https://github.com/sleepingraven/idea-setting-explorer/releases/latest
-[gh:change-log]: https://github.com/sleepingraven/idea-setting-explorer/blob/master/CHANGELOG.md
+[gh:change-log]: https://github.com/sleepingraven/idea-setting-explorer/blob/main/CHANGELOG.md
 [gh:build]: https://github.com/sleepingraven/idea-setting-explorer/actions?query=workflow%3ABuild
-[gh:license]: https://github.com/sleepingraven/idea-setting-explorer/blob/master/LICENSE
+[gh:license]: https://github.com/sleepingraven/idea-setting-explorer/blob/main/LICENSE
 
 [plugin-homepage]: https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer/
 [plugin-reviews]: https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer/reviews

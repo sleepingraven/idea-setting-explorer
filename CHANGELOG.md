@@ -12,6 +12,7 @@
 ### Fixed
 
 ### Security
+
 ## [0.0.3]
 ### Fixed
 - Plugin Description fixed

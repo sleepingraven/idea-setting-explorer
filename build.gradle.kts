@@ -39,6 +39,7 @@ val platformPlugins: String by project
 val platformDownloadSources: String by project
 
 val javaVersion: String by project
+val pluginHomepage: String by project
 
 group = pluginGroup
 version = pluginVersion
@@ -135,8 +136,8 @@ tasks {
             closure {
                 (
                     "<p><strong>Setting Navigation for IntelliJ IDEA.</strong></p>" +
-                        "<p><b><a href='https://github.com/sleepingraven/idea-setting-explorer'>GitHub</a> | " +
-                        "<a href='https://github.com/sleepingraven/idea-setting-explorer/issues'>Issues</a></b></p>" +
+                        "<p><b><a href='$pluginHomepage'>GitHub</a> | " +
+                        "<a href='$pluginHomepage/issues'>Issues</a></b></p>" +
                         File("./README.md").readText().lines().run {
                             val start = "<!-- Plugin description -->"
                             val end = "<!-- Plugin description end -->"
@@ -153,7 +154,8 @@ tasks {
         // Get the latest available change notes from the changelog file
         changeNotes(
             closure {
-                changelog.getLatest().toHTML()
+                changelog.getLatest().toHTML() +
+                    "<br /><p>See also the complete <a href='$pluginHomepage/blob/main/CHANGELOG.md'>changelog</a>.</p>"
             }
         )
     }
