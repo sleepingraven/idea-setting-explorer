@@ -92,7 +92,7 @@ IntelliJ IDEA for version 2020.2 or higher.
 
 The popups are activated by one of following performances:
 
- - Click this action's icon button ![Action](./src/main/resources/META-INF/miniLogo.svg) on **Toolbar**.
+ - Click this action's icon button ![Action Button][file:action-button.png] on **Toolbar**.
  - Press <kbd>Ctrl+Alt+Shift+E</kbd> bound to the action.
  - Type action name `View Settings` on Windows / `View Preferences` on Mac in **Search Everywhere**, enter this action.
 
@@ -164,6 +164,7 @@ You can support this project through any of the following points:
 [file:plugin-icon.svg]: .github/readme/pluginIcon.svg
 [file:app-preview.png]: .github/readme/app-preview.png
 [file:view-mode-preview.png]: .github/readme/view-mode-preview.png
+[file:action-button.png]: ./src/main/resources/META-INF/miniLogo.svg
 [file:active-popup.png]: .github/readme/active-popup.png
 [file:tags.png]: .github/readme/tags.png
 [file:search.png]: .github/readme/search.png
