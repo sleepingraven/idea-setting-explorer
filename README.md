@@ -11,7 +11,7 @@
 <h1>Idea Setting Explorer</h1>
 <p>Setting Navigation for IntelliJ IDEA.</p>
 
-[![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
+[![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)][plugin-homepage]
 [![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
 [![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer)][gh:latest-release]
 [![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
@@ -19,15 +19,15 @@
 </div>
 
 <!--
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
-[![Rating](https://img.shields.io/jetbrains/plugin/r/rating/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
-[![Rating](https://img.shields.io/jetbrains/plugin/r/stars/15345-idea-setting-explorer.svg)](https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/15345-idea-setting-explorer.svg)]()
+[![Rating](https://img.shields.io/jetbrains/plugin/r/rating/15345-idea-setting-explorer.svg)]()
+[![Rating](https://img.shields.io/jetbrains/plugin/r/stars/15345-idea-setting-explorer.svg)]()
 [![Stars](https://badgen.net/github/stars/sleepingraven/idea-setting-explorer/)]()
 [![Top Languages](https://img.shields.io/github/languages/top/sleepingraven/idea-setting-explorer)]()
 [![Languages](https://img.shields.io/github/languages/count/sleepingraven/idea-setting-explorer)]()
 [![Search Counter](https://img.shields.io/github/search/sleepingraven/idea-setting-explorer/hh)]()
 [![Code Size](https://img.shields.io/github/languages/code-size/sleepingraven/idea-setting-explorer)]()
-[![GitHub Repo Size](https://img.shields.io/github/repo-size/sleepingraven/idea-setting-explorer)][gh:latest-release]
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/sleepingraven/idea-setting-explorer)]()
 [![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer?include_prereleases)]()
 -->
 
@@ -175,7 +175,7 @@ You can support this project through any of the following points:
 [gh:build]: https://github.com/sleepingraven/idea-setting-explorer/actions?query=workflow%3ABuild
 [gh:license]: https://github.com/sleepingraven/idea-setting-explorer/blob/main/LICENSE
 
-[plugin-homepage]: https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer/
+[plugin-homepage]: https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer
 [plugin-reviews]: https://plugins.jetbrains.com/plugin/15345-idea-setting-explorer/reviews
 
 [docs:idea]: https://www.jetbrains.com/help/idea/discover-intellij-idea.html
