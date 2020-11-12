@@ -79,6 +79,7 @@ IntelliJ IDEA for version 2020.2 or higher.
 ## Installation
 
 - Using IDE built-in plugin system:
+
   <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "Idea Setting Explorer"</kbd> >
   <kbd>Install Plugin</kbd>
 
@@ -89,7 +90,11 @@ IntelliJ IDEA for version 2020.2 or higher.
 
 ## Usage
 
-The popups active by clicking this action's icon button on **Toolbar**, or pressing <kbd>Ctrl+Alt+Shift+E</kbd> bound to the action, or typing action name `View Settings` on Windows / `View Preferences` on Mac in **Search Everywhere**.
+The popups are activated by one of following performances:
+
+ - Click this action's icon button ![Action](./src/main/resources/META-INF/miniLogo.svg) on **Toolbar**.
+ - Press <kbd>Ctrl+Alt+Shift+E</kbd> bound to the action.
+ - Type action name `View Settings` on Windows / `View Preferences` on Mac in **Search Everywhere**, enter this action.
 
 ![Active Popup][file:active-popup.png]
 
