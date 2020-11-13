@@ -96,7 +96,7 @@ The popups are activated by one of following performances:
  - Press <kbd>Ctrl+Alt+Shift+E</kbd> bound to the action.
  - Type action name `View Settings` on Windows / `View Preferences` on Mac in **Search Everywhere**, enter this action.
 
-![Active Popup][file:active-popup.png]
+![Activate Popup][file:activate-popup.png]
 
 ### Shortcuts
 
@@ -167,7 +167,7 @@ You can support this project through any of the following points:
 
 [file:app-preview.png]: .github/readme/app-preview.png
 [file:view-mode-preview.png]: .github/readme/view-mode-preview.png
-[file:active-popup.png]: .github/readme/active-popup.png
+[file:activate-popup.png]: .github/readme/activate-popup.png
 [file:tags.png]: .github/readme/tags.png
 [file:search.png]: .github/readme/search.png
 
