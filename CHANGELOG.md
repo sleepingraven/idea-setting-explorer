@@ -1,17 +1,8 @@
 # Changelog
 
 ## [Unreleased]
-### Added
-
 ### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
+- Plugin Description changed
 
 ## [0.0.3]
 ### Fixed

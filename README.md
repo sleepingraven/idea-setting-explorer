@@ -57,7 +57,7 @@ The main goal of this plugin is to provide guidance of configurations for develo
 - linking to the proper documentation pages,
 - marking them with colored tags,
 
-witch displays in lightweight, concise, fast and immersive popups.
+which displays in lightweight, concise, fast and immersive popups.
 <!-- Plugin description end -->
 
 ## Overview
@@ -113,7 +113,7 @@ In addition, you can also give expansion by clicking mouse <kbd>Main Button</kbd
 
 ### Tags
 
-There are several colored tags of configurations, marking them and providing additional information, witch can be searched in *Search Text Field*.
+There are several colored tags of configurations, marking them and providing additional information, which can be searched in *Search Text Field*.
 
 ![Tags][file:tags.png]
 
