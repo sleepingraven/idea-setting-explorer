@@ -12,14 +12,14 @@
 <p>Setting Navigation for IntelliJ IDEA.</p>
 
 [![Version](https://img.shields.io/jetbrains/plugin/v/15345-idea-setting-explorer.svg)][plugin-homepage]
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/15345-idea-setting-explorer.svg)][plugin-homepage]
+[![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
 [![Build](https://github.com/sleepingraven/idea-setting-explorer/workflows/Build/badge.svg)][gh:build]
 [![Release](https://img.shields.io/github/v/release/sleepingraven/idea-setting-explorer)][gh:latest-release]
-[![License](https://img.shields.io/github/license/sleepingraven/idea-setting-explorer)][gh:license]
 
 </div>
 
 <!--
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/15345-idea-setting-explorer.svg)]()
 [![Rating](https://img.shields.io/jetbrains/plugin/r/rating/15345-idea-setting-explorer.svg)]()
 [![Rating](https://img.shields.io/jetbrains/plugin/r/stars/15345-idea-setting-explorer.svg)]()
 [![Stars](https://badgen.net/github/stars/sleepingraven/idea-setting-explorer/)]()
@@ -137,9 +137,9 @@ Additionally, matches are not case-sensitive.
 
 ## Change Note
 
-> ### [v0.0.3](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.0.3) (2020/11/12)
-> - Fixed
->   - Plugin Description fixed
+> ### [v0.0.4](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.0.4) (2020/11/24)
+> - Changed
+>   - Plugin Description changed
 
 Refer to [Changelog][gh:change-log] page for the complete update log.
 
