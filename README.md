@@ -98,6 +98,10 @@ The popups are activated by one of following performances:
 
 ![Activate Popup][file:activate-popup.png]
 
+Before moving on, please refer to the components illustrated below.
+
+![Components][file:components.png]
+
 ### Shortcuts
 
 | Key | Description |
@@ -168,6 +172,7 @@ You can support this project through any of the following points:
 [file:app-preview.png]: .github/readme/app-preview.png
 [file:view-mode-preview.png]: .github/readme/view-mode-preview.png
 [file:activate-popup.png]: .github/readme/activate-popup.png
+[file:components.png]: .github/readme/Components.png
 [file:tags.png]: .github/readme/tags.png
 [file:search.png]: .github/readme/search.png
 
