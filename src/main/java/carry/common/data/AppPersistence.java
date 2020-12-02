@@ -85,7 +85,7 @@ public class AppPersistence extends StorableState<AppPersistence> implements Set
                     configMap = sourceData.getConfigMap();
                     contentMap = sourceData.getContentMap();
             }
-            version = "0.0.5";
+            version = "0.1.0";
             refresh = false;
         } catch (JDOMException | IOException e) {
             e.printStackTrace();
