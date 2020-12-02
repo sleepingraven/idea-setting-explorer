@@ -2,16 +2,8 @@
 
 ## [Unreleased]
 ### Added
+- 2020.3 supported
 
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
 ## [0.0.4] - 2020-11-24
 ### Changed
 - Plugin Description changed

@@ -773,6 +773,17 @@
 							<Point name="Accepted words" />
 						</Config>
 					</Config>
+					<Config name="Reader Mode">
+						<Point name="Enable Reader mode" />
+						<Bag name="Show in Reader mode">
+							<Point name="Rendered documentation comments" />
+							<Point name="Editor breadcrumbs" />
+							<Point name="Error and warning highlighting, inspection widget" />
+							<Point name="Font ligatures" />
+							<Point name="Increased line spacing" />
+							<Point name="Code vision hints for usages, inheritors, and related problems" />
+						</Bag>
+					</Config>
 					<Config name="TextMate Bundles" />
 					<Config name="TODO">
 						<Point name="Treat indented text on the following lines as part of the same TODO" />
@@ -1387,7 +1398,9 @@
 						<Point name="Make project automatically (only works while not running/debugging)" />
 						<Point name="Sync project with Gradle before building, if needed" />
 					</Config>
-					<Config name="Java Profiler" />
+					<Config name="Java Profiler">
+						<Config name="Filters" />
+					</Config>
 					<Config name="Required Plugins" />
 				</Config>
 				<Config name="Languages &amp; Frameworks">
