@@ -80,6 +80,7 @@ public class AppPersistence extends StorableState<AppPersistence> implements Set
                 case "0.0.2":
                 case "0.0.3":
                 case "0.0.4":
+                case "0.1.0":
                 default:
                     AppSourceData sourceData = new AppSourceData();
                     configMap = sourceData.getConfigMap();
