@@ -12,7 +12,8 @@
 ### Fixed
 
 ### Security
-## [0.1.0]
+
+## [0.1.0] - 2020-12-4
 ### Added
 - 2020.3 supported
 

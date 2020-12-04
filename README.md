@@ -141,9 +141,9 @@ Additionally, matches are not case-sensitive.
 
 ## Change Note
 
-> ### [v0.0.4](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.0.4) (2020/11/24)
-> - Changed
->   - Plugin Description changed
+> ### [v0.1.0](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.1.0) (2020/11/24)
+> - Added
+>   - 2020.3 supported
 
 Refer to [Changelog][gh:change-log] page for the complete update log.
 
