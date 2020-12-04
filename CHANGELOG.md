@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 ### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+## [0.1.0]
+### Added
 - 2020.3 supported
 
 ## [0.0.4] - 2020-11-24
