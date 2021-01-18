@@ -74,7 +74,7 @@ There are two expression ways of the UI on this plugin:
 
 ## Compatibility
 
-IntelliJ IDEA for version 2020.2 or higher.
+IntelliJ IDEA for version 2020 or higher.
 
 ## Installation
 
@@ -141,7 +141,7 @@ Additionally, matches are not case-sensitive.
 
 ## Change Note
 
-> ### [v0.1.0](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.1.0) (2020/11/24)
+> ### [v0.1.0](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.1.0) (2020/12/4)
 > - Added
 >   - 2020.3 supported
 
