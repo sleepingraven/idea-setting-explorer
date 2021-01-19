@@ -98,7 +98,7 @@ The popups are activated by one of following performances:
 
 ![Activate Popup][file:activate-popup.png]
 
-Before moving on, please refer to the components illustrated below.
+You may have an impression of the components illustrated below before proceeding.
 
 ![Components][file:components.png]
 
