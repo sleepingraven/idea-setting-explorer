@@ -1,36 +1,10 @@
 # Changelog
 
 ## [Unreleased]
-### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
-## [0.1.1]
 
 ### Added
 
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
-
-## [0.1.1] - 2021-6-13
-
-### Added
-
-- 2021.1 supported
+- support for 2021.1
 
 ## [0.1.0] - 2020-12-4
 
