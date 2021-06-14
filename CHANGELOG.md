@@ -1,6 +1,7 @@
 # Changelog
 
 ## [Unreleased]
+
 ### Added
 
 ### Changed
@@ -12,7 +13,8 @@
 ### Fixed
 
 ### Security
-## [0.1.1]
+
+## [0.1.1] - 2021-6-14
 
 ### Added
 
