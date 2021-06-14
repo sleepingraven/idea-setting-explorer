@@ -32,17 +32,22 @@ import com.intellij.util.ui.UIUtil;
 import lombok.Getter;
 import org.jetbrains.annotations.NotNull;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.text.*;
+import javax.swing.text.html.HTML.Attribute;
 import javax.swing.text.html.HTML.Tag;
+import javax.swing.text.html.HTMLDocument.RunElement;
 import javax.swing.text.html.HTMLEditorKit;
 import javax.swing.text.html.ImageView;
 import javax.swing.text.html.StyleSheet;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Arrays;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -114,6 +119,27 @@ public class DescriptionPanel extends JBPanel<DescriptionPanel> implements Hiera
                                     }
                                 };
                                 sizer.add(imageView);
+                                // wrong at ImageView.loadImage() in 2021.1
+                                try {
+                                    Hashtable<URL, Image> imageCache =
+                                            (Hashtable<URL, Image>) elem.getDocument().getProperty("imageCache");
+                                    if (imageCache == null) {
+                                        imageCache = new Hashtable<>();
+                                        elem.getDocument().putProperty("imageCache", imageCache);
+                                    }
+                                    final BufferedImage newImage =
+                                            ImageIO.read(new URL(imageView.getImageURL().toString()));
+                                    imageCache.put(imageView.getImageURL(), newImage);
+                                    
+                                    final String width = (String) ((RunElement) imageView.getElement()).getAttribute(
+                                            Attribute.WIDTH);
+                                    double r = (double) newImage.getHeight() / newImage.getWidth();
+                                    int height = (int) Math.round(Integer.parseInt(width) * r);
+                                    ((RunElement) imageView.getElement()).addAttribute(Attribute.HEIGHT,
+                                                                                       String.valueOf(height));
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
                                 return imageView;
                             }
                         }

@@ -81,12 +81,13 @@ public class AppPersistence extends StorableState<AppPersistence> implements Set
                 case "0.0.3":
                 case "0.0.4":
                 case "0.1.0":
+                case "0.1.1":
                 default:
                     AppSourceData sourceData = new AppSourceData();
                     configMap = sourceData.getConfigMap();
                     contentMap = sourceData.getContentMap();
             }
-            version = "0.1.0";
+            version = "0.1.1";
             refresh = false;
         } catch (JDOMException | IOException e) {
             e.printStackTrace();
