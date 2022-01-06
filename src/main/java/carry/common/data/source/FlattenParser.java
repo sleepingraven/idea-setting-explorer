@@ -23,7 +23,7 @@ public class FlattenParser extends SourceDataParser {
     public void loadSourceData() throws JDOMException, IOException {
         SAXBuilder saxBuilder = new SAXBuilder();
         Document doc = saxBuilder.build(
-                AppSourceData.class.getClassLoader().getResourceAsStream("/META-INF/app-source-data.xml"));
+                AppSourceData.class.getResourceAsStream("/META-INF/app-source-data.xml"));
         Element root = doc.getRootElement();
         elemNs = root.getNamespace();
         Element component = root.getChild("component", elemNs);

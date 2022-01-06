@@ -20,7 +20,7 @@ import java.util.function.Consumer;
  * @date 2020/9/3
  */
 public class ResourceUtil {
-    private static final URL EMPTY = ResourceUtil.class.getClassLoader().getResource("/utils/empty.html");
+    private static final URL EMPTY = ResourceUtil.class.getResource("/utils/empty.html");
     public static final String BASE_PATH = "F:\\idea-setting-explorer-temp-directory\\";
     
     public static void generateResource(ConfigWrapper myRoot, String basePath, boolean doc,

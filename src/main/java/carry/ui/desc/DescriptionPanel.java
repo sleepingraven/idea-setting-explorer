@@ -191,7 +191,7 @@ public class DescriptionPanel extends JBPanel<DescriptionPanel> implements Hiera
     public void setComposite(BaseComposite composite) {
         try {
             String dir = getDescDir(composite);
-            URL resource = getClass().getClassLoader().getResource(dir + AppConstants.DESC_DOC_NAME);
+            URL resource = getClass().getResource(dir + AppConstants.DESC_DOC_NAME);
             if (resource == null) {
                 resource = NO_DOC_YET;
             }
@@ -206,8 +206,8 @@ public class DescriptionPanel extends JBPanel<DescriptionPanel> implements Hiera
         }
     }
     
-    private static final URL NO_DOC_YET = DescriptionPanel.class.getClassLoader().getResource("/docs/no-doc-yet.html");
-    private static final URL EMPTY = DescriptionPanel.class.getClassLoader().getResource("/utils/empty.html");
+    private static final URL NO_DOC_YET = DescriptionPanel.class.getResource("/docs/no-doc-yet.html");
+    private static final URL EMPTY = DescriptionPanel.class.getResource("/utils/empty.html");
     private static final List<String> FILE_PATH_DELIMITERS = Arrays.asList("/", "/", "/");
     
     private String getDescDir(BaseComposite composite) {
@@ -242,7 +242,7 @@ public class DescriptionPanel extends JBPanel<DescriptionPanel> implements Hiera
         styleSheet.addRule(String.format("kbd, tt, code, pre { font-family: \"%s\"; }", editorFontName));
         styleSheet.addRule(String.format("kbd { font-size: %s; }", size));
         styleSheet.addRule(String.format("tt, code, pre { font-size: %s; }", "96%"));
-        styleSheet.addRule(String.format("a { color: #%s; }", ColorUtil.toHex(JBUI.CurrentTheme.Link.linkColor())));
+        styleSheet.addRule(String.format("a { color: #%s; }", ColorUtil.toHex(JBUI.CurrentTheme.Link.Foreground.ENABLED)));
         
         styleSheet.addRule("ul ul { list-style-type: circle; }");
         styleSheet.addRule("ul ul ul { list-style-type: square; }");
