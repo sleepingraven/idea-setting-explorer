@@ -1,6 +1,7 @@
 package carry.settings.base;
 
 import carry.settings.util.MyWrapperProxy;
+import com.intellij.openapi.util.Disposer;
 import com.intellij.util.Producer;
 import lombok.SneakyThrows;
 import org.jetbrains.annotations.Nullable;
@@ -76,7 +77,7 @@ public abstract class WrappingSettingsConfigurable<C extends BaseSettingsCompone
     
     @Override
     public void disposeUIResources() {
-        mySettingsComponent.dispose();
+        Disposer.dispose(mySettingsComponent);
         proxy.setWrapped(null);
     }
     

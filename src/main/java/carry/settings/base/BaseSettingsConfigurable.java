@@ -3,6 +3,7 @@ package carry.settings.base;
 import carry.settings.util.OperationExecutor;
 import com.intellij.openapi.options.Configurable;
 import com.intellij.openapi.options.ConfigurationException;
+import com.intellij.openapi.util.Disposer;
 import com.intellij.util.Producer;
 import lombok.Getter;
 import org.jetbrains.annotations.Nls;
@@ -120,7 +121,7 @@ public abstract class BaseSettingsConfigurable<C extends BaseSettingsComponent> 
     
     @Override
     public void disposeUIResources() {
-        mySettingsComponent.dispose();
+        Disposer.dispose(mySettingsComponent);
         mySettingsComponent = null;
     }
     

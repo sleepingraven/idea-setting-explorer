@@ -114,7 +114,7 @@ public abstract class BasePopupWrapper implements Disposable, ApplicationService
     
     @Override
     public void dispose() {
-        jbPopup.dispose();
+        Disposer.dispose(jbPopup);
     }
     
 }
