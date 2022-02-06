@@ -1,71 +1,72 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-	<id>com.github.sleepingraven.idea-setting-explorer</id>
-	<name>Idea Setting Explorer</name>
-	<version>/</version>
-	<vendor email="spgrvn@gmail.com" url="https://github.com/sleepingraven/">sleepingraven</vendor>
+    <id>com.github.sleepingraven.idea-setting-explorer</id>
+    <name>Idea Setting Explorer</name>
+    <version>/</version>
+    <vendor email="spgrvn@gmail.com" url="https://github.com/sleepingraven/">sleepingraven</vendor>
 
-	<!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-	<idea-version since-build="202" until-build="202.*" />
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="202" until-build="202.*"/>
 
-	<!-- Product and plugin compatibility requirements -->
-	<!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-		 on how to target different products -->
-	<depends>com.intellij.modules.platform</depends>
+    <!-- Product and plugin compatibility requirements -->
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
 
-	<applicationListeners>
-		<listener class="carry.listeners.MyLafListener"
-		          topic="com.intellij.ide.ui.LafManagerListener" />
-	</applicationListeners>
+    <applicationListeners>
+        <listener class="carry.listeners.MyLafListener"
+                  topic="com.intellij.ide.ui.LafManagerListener"/>
+    </applicationListeners>
 
-	<extensions defaultExtensionNs="com.intellij">
-		<applicationService serviceImplementation="carry.common.ConfigsUtil" />
-		<applicationService serviceImplementation="carry.ui.AppUiUtil" />
-		<projectService serviceImplementation="carry.ui.list.ConfigsListSearchPopup" />
-		<projectService serviceImplementation="carry.ui.tree.ConfigsTreeController" />
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="carry.common.ConfigsUtil"/>
+        <applicationService serviceImplementation="carry.ui.AppUiUtil"/>
+        <projectService serviceImplementation="carry.ui.list.ConfigsListSearchPopup"/>
+        <projectService serviceImplementation="carry.ui.tree.ConfigsTreeController"/>
 
-		<applicationService
-				serviceImplementation="carry.common.data.AppPersistence" />
+        <applicationService
+                serviceImplementation="carry.common.data.AppPersistence"/>
 
-		<applicationService
-				serviceImplementation="carry.settings.AppSettingsState" />
-		<applicationConfigurable parentId="tools"
-		                         instance="carry.settings.AppSettingsConfigurable"
-		                         id="carry.settings.AppSettingsConfigurable" />
-		<!-- applicationConfigurable framework template -->
-		<!--
-		<applicationService
-				serviceImplementation="carry.settings.template.TemplateSettingsState" />
-		<applicationConfigurable parentId="tools"
-		                         instance="carry.settings.template.TemplateSettingsConfigurable"
-		                         id="carry.settings.template.TemplateSettingsConfigurable" />
-		-->
-	</extensions>
+        <applicationService
+                serviceImplementation="carry.settings.AppSettingsState"/>
+        <applicationConfigurable parentId="tools"
+                                 instance="carry.settings.AppSettingsConfigurable"
+                                 id="carry.settings.AppSettingsConfigurable"/>
+        <!-- applicationConfigurable framework template -->
+        <!--
+        <applicationService
+                serviceImplementation="carry.settings.template.TemplateSettingsState" />
+        <applicationConfigurable parentId="tools"
+                                 instance="carry.settings.template.TemplateSettingsConfigurable"
+                                 id="carry.settings.template.TemplateSettingsConfigurable" />
+        -->
+    </extensions>
 
-	<actions>
-		<!-- equals to the magic value in class -->
-		<action id="carry.actions.ViewSettingsAction"
-		        class="carry.actions.ViewSettingsAction"
-		        icon="PluginIcons.MINI_LOGO">
-			<keyboard-shortcut first-keystroke="control alt shift E" keymap="$default" />
-			<keyboard-shortcut first-keystroke="control meta shift E" keymap="Mac OS X" replace-all="true" />
-			<keyboard-shortcut first-keystroke="control meta shift E" keymap="Mac OS X 10.5+" replace-all="true" />
-			<abbreviation value="preferences" />
-		</action>
+    <actions>
+        <!-- equals to the magic value in class -->
+        <action id="carry.actions.ViewSettingsAction"
+                class="carry.actions.ViewSettingsAction"
+                icon="PluginIcons.MINI_LOGO">
+            <keyboard-shortcut first-keystroke="control alt shift E" keymap="$default"/>
+            <keyboard-shortcut first-keystroke="control meta shift E" keymap="Mac OS X" replace-all="true"/>
+            <keyboard-shortcut first-keystroke="control meta shift E" keymap="Mac OS X 10.5+" replace-all="true"/>
+            <abbreviation value="preferences"/>
+        </action>
 
-		<group id="idea-setting-explorer-group:MainToolBar"
-		       text="Idea Setting Explorer"
-		       popup="false">
-			<separator />
-			<reference ref="carry.actions.ViewSettingsAction" />
+        <group id="idea-setting-explorer-group:MainToolBar"
+               text="Idea Setting Explorer"
+               popup="false">
+            <separator/>
+            <reference ref="carry.actions.ViewSettingsAction"/>
 
-			<add-to-group group-id="MainToolBar" anchor="last" />
-		</group>
-		<group id="idea-setting-explorer-group:HelpMenu"
-		       text="Idea Setting Explorer"
-		       popup="false">
-			<reference ref="carry.actions.ViewSettingsAction" />
+            <add-to-group group-id="MainToolBar" anchor="last"/>
+        </group>
+        <group id="idea-setting-explorer-group:HelpMenu"
+               text="Idea Setting Explorer"
+               popup="false">
+            <reference ref="carry.actions.ViewSettingsAction"/>
 
-			<add-to-group group-id="HelpMenu" anchor="last" />
-		</group>
-	</actions>
+            <add-to-group group-id="HelpMenu" anchor="last"/>
+        </group>
+    </actions>
 </idea-plugin>
