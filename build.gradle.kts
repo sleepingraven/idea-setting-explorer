@@ -56,7 +56,7 @@ allprojects {
 }
 dependencies {
     compileOnly("org.projectlombok:lombok:1.18.22")
-    annotationProcessor("org.projectlombok:lombok:1.18.16")
+    annotationProcessor("org.projectlombok:lombok:1.18.22")
     implementation("cglib:cglib:3.3.0")
 }
 
@@ -101,6 +101,12 @@ tasks {
 
     wrapper {
         gradleVersion = properties("gradleVersion")
+    }
+
+    // the requirement with Gradle 7. See also https://github.com/gradle/gradle/issues/17236
+    // or set Gradle version under 7 directly
+    processResources {
+        duplicatesStrategy = DuplicatesStrategy.WARN
     }
 
     patchPluginXml {
