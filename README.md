@@ -141,7 +141,7 @@ Additionally, matches are not case-sensitive.
 
 ## Change Note
 
-> ### [v0.1.2](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.1.2) (2022/1/6)
+> ### [v0.2.0](https://github.com/sleepingraven/idea-setting-explorer/tree/v0.2.0) (2022/2/7)
 > - Added
 >   - support for 2021.3
 
