@@ -74,7 +74,7 @@ There are two expression ways of the UI on this plugin:
 
 ## Compatibility
 
-IntelliJ IDEA for version 2020 or higher.
+IntelliJ IDEA for version 2020 — 2021.
 
 ## Installation
 
